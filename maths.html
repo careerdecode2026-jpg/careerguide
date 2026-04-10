@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mathematics Stream — Career Guide India 2026-27</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
+:root {
+  --navy:#0F2044;--blue:#1E4D9B;--gold:#D4880A;--green:#166534;--green-lt:#DCFCE7;
+  --red:#991B1B;--red-lt:#FEE2E2;--orange:#9A3412;--orange-lt:#FFEDD5;
+  --purple:#5B21B6;--purple-lt:#EDE9FE;--olive:#3D5A1E;--olive-lt:#ECFCCB;
+  --gray:#6B7280;--bg:#F7F8FC;--white:#FFFFFF;--border:#E2E8F0;--text:#1E293B;--text-lt:#475569;
+  --sidebar-w:260px;--header-h:60px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;}
+.topbar{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--header-h);background:var(--navy);display:flex;align-items:center;gap:16px;padding:0 20px;box-shadow:0 2px 12px rgba(0,0,0,0.25);}
+.topbar-logo{font-family:'Crimson Pro',serif;font-size:20px;font-weight:700;color:#fff;text-decoration:none;}
+.topbar-logo span{color:var(--gold);}
+.topbar-back{font-size:13px;color:rgba(255,255,255,0.6);text-decoration:none;margin-left:8px;}
+.topbar-back:hover{color:#fff;}
+.hamburger{margin-left:auto;background:none;border:none;cursor:pointer;color:#fff;font-size:22px;padding:4px 8px;display:block;}
+@media(min-width:900px){.hamburger{display:none;}}
+.sidebar{position:fixed;top:var(--header-h);left:0;bottom:0;width:var(--sidebar-w);background:var(--white);border-right:1px solid var(--border);overflow-y:auto;z-index:90;transform:translateX(-100%);transition:transform .28s ease;}
+.sidebar.open{transform:translateX(0);}
+@media(min-width:900px){.sidebar{transform:translateX(0);}}
+.sidebar-section{padding:8px 0;border-bottom:1px solid var(--border);}
+.sidebar-label{font-size:10px;font-weight:600;letter-spacing:1.2px;color:var(--gray);text-transform:uppercase;padding:10px 18px 4px;}
+.sidebar a{display:flex;align-items:center;gap:10px;padding:9px 18px;font-size:13.5px;font-weight:400;color:var(--text-lt);text-decoration:none;border-left:3px solid transparent;transition:all .18s;}
+.sidebar a:hover{background:var(--bg);color:var(--navy);}
+.sidebar a.active{background:#EEF3FB;color:var(--blue);border-left-color:var(--blue);font-weight:600;}
+.badge{margin-left:auto;font-size:11px;padding:1px 7px;border-radius:10px;font-weight:600;}
+.badge-eng{background:#DBEAFE;color:#1E40AF;}
+.badge-sci{background:var(--green-lt);color:var(--green);}
+.badge-des{background:var(--purple-lt);color:var(--purple);}
+.badge-def{background:var(--olive-lt);color:var(--olive);}
+.badge-pvt{background:var(--orange-lt);color:var(--orange);}
+.badge-plan{background:#FFF3D6;color:#7a4f00;}
+.main{margin-left:0;margin-top:var(--header-h);padding:32px 20px 60px;transition:margin-left .28s;}
+@media(min-width:900px){.main{margin-left:var(--sidebar-w);padding:40px 48px 80px;}}
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:85;}
+.overlay.show{display:block;}
+.hero{background:linear-gradient(135deg,#1E4D9B 0%,#2563EB 100%);color:#fff;border-radius:14px;padding:36px 32px;margin-bottom:36px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,0.06);}
+.hero-badge{display:inline-block;background:var(--gold);color:var(--navy);font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 10px;border-radius:4px;margin-bottom:12px;}
+.hero h1{font-family:'Crimson Pro',serif;font-size:clamp(24px,4vw,36px);font-weight:700;line-height:1.2;margin-bottom:10px;}
+.hero p{font-size:15px;color:rgba(255,255,255,0.78);max-width:580px;}
+.back-btn{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);color:#fff;text-decoration:none;padding:7px 16px;border-radius:6px;font-size:13px;font-weight:600;margin-top:18px;transition:background .18s;}
+.back-btn:hover{background:rgba(255,255,255,0.25);}
+.section-title{font-family:'Crimson Pro',serif;font-size:20px;font-weight:700;color:var(--navy);margin:32px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--border);}
+.exam-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin:16px 0;}
+.exam-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:20px;border-left:4px solid var(--blue);text-decoration:none;color:var(--text);transition:box-shadow .2s,transform .2s;display:block;}
+.exam-card:hover{box-shadow:0 4px 16px rgba(0,0,0,0.1);transform:translateY(-2px);}
+.exam-card.eng{border-left-color:#2563EB;}
+.exam-card.sci{border-left-color:var(--green);}
+.exam-card.des{border-left-color:var(--purple);}
+.exam-card.def{border-left-color:var(--olive);}
+.exam-card.pvt{border-left-color:var(--orange);}
+.exam-card.plan{border-left-color:var(--gold);}
+.exam-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;}
+.exam-title{font-weight:700;font-size:15px;color:var(--navy);}
+.exam-tag{font-size:11px;font-weight:600;padding:2px 8px;border-radius:4px;}
+.tag-eng{background:#DBEAFE;color:#1E40AF;}
+.tag-sci{background:var(--green-lt);color:var(--green);}
+.tag-des{background:var(--purple-lt);color:var(--purple);}
+.tag-def{background:var(--olive-lt);color:var(--olive);}
+.tag-pvt{background:var(--orange-lt);color:var(--orange);}
+.tag-plan{background:#FFF3D6;color:#7a4f00;}
+.exam-desc{font-size:13px;color:var(--text-lt);margin-bottom:10px;line-height:1.5;}
+.exam-meta{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--gray);}
+.exam-meta span strong{color:var(--text);font-weight:600;}
+.exam-arrow{float:right;color:var(--blue);font-weight:700;margin-top:4px;}
+.footer{margin-top:60px;padding:24px;border-top:1px solid var(--border);text-align:center;font-size:13px;color:var(--gray);}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="topbar-logo" href="index.html">Career<span>Guide</span>.in</a>
+  <a class="topbar-back" href="index.html">← All Streams</a>
+  <button class="hamburger" id="hamburger">&#9776;</button>
+</header>
+<div class="overlay" id="overlay"></div>
+<nav class="sidebar" id="sidebar">
+  <div class="sidebar-section"><div class="sidebar-label">← Back</div><a href="index.html">🏠 All Streams</a></div>
+  <div class="sidebar-section"><div class="sidebar-label">Engineering</div>
+    <a href="jee-main.html">JEE Main <span class="badge badge-eng">Sec 1</span></a>
+    <a href="jee-advanced.html">JEE Advanced → IITs <span class="badge badge-eng">Sec 2</span></a>
+    <a href="josaa.html">JoSAA Counselling <span class="badge badge-eng">Sec 3</span></a>
+    <a href="bitsat.html">BITSAT — BITS Pilani <span class="badge badge-pvt">Sec 4</span></a>
+    <a href="private.html">Private Colleges <span class="badge badge-pvt">Sec 5</span></a>
+  </div>
+  <div class="sidebar-section"><div class="sidebar-label">Science &amp; Research</div>
+    <a href="iiser.html">IISER IAT <span class="badge badge-sci">Sec 6</span></a>
+    <a href="isi-cmi.html">ISI &amp; CMI <span class="badge badge-sci">Sec 9</span></a>
+  </div>
+  <div class="sidebar-section"><div class="sidebar-label">Design &amp; Architecture</div>
+    <a href="uceed.html">UCEED — IIT Design <span class="badge badge-des">Sec 7</span></a>
+    <a href="architecture.html">NATA / B.Arch <span class="badge badge-des">Sec 8</span></a>
+  </div>
+  <div class="sidebar-section"><div class="sidebar-label">Other Paths</div>
+    <a href="nda.html">NDA — Defence <span class="badge badge-def">Sec 10</span></a>
+    <a href="merchant-navy.html">Merchant Navy <span class="badge badge-def">Sec 11</span></a>
+  </div>
+  <div class="sidebar-section"><div class="sidebar-label">Planning</div>
+    <a href="decision.html">Decision Matrix <span class="badge badge-plan">Sec 12</span></a>
+    <a href="calendar.html">Exam Calendar <span class="badge badge-plan">Sec 13</span></a>
+    <a href="scholarships.html">Scholarships <span class="badge badge-plan">Sec 14</span></a>
+    <a href="websites.html">Official Websites <span class="badge badge-plan">Sec 15</span></a>
+  </div>
+</nav>
+<main class="main">
+
+  <div class="hero">
+    <div class="hero-badge">Mathematics · PCM Stream</div>
+    <h1>Mathematics Stream<br>Career Guide</h1>
+    <p>Complete guide for PCM students — all entrance exams, colleges, cutoffs, fees and career paths for the 2026-27 admission cycle.</p>
+    <a class="back-btn" href="index.html">← Back to All Streams</a>
+  </div>
+
+  <h2 class="section-title">Engineering Entrances</h2>
+  <div class="exam-grid">
+    <a class="exam-card eng" href="jee-main.html">
+      <div class="exam-card-top"><span class="exam-title">JEE Main</span><span class="exam-tag tag-eng">Engineering</span></div>
+      <p class="exam-desc">Gateway to 31 NITs, 25 IIITs and 30 GFTIs. Also qualifying exam for JEE Advanced (IITs). Two sessions — Jan + Apr 2026.</p>
+      <div class="exam-meta"><span><strong>Colleges:</strong> NITs, IIITs, GFTIs</span><span><strong>When:</strong> Jan + Apr 2026</span><span><strong>Difficulty:</strong> High</span></div>
+      <span class="exam-arrow">→</span>
+    </a>
+    <a class="exam-card eng" href="jee-advanced.html">
+      <div class="exam-card-top"><span class="exam-title">JEE Advanced → IITs</span><span class="exam-tag tag-eng">Engineering</span></div>
+      <p class="exam-desc">Gateway to 23 IITs. Only top 2,50,000 JEE Main qualifiers can appear. Always attempt if eligible — it's free.</p>
+      <div class="exam-meta"><span><strong>Colleges:</strong> 23 IITs</span><span><strong>When:</strong> May 2026</span><span><strong>Difficulty:</strong> Very High</span></div>
+      <span class="exam-arrow">→</span>
+    </a>
+    <a class="exam-card eng" href="josaa.html">
+      <div class="exam-card-top"><span class="exam-title">JoSAA Counselling</span><span class="exam-tag tag-eng">Seat Allocation</span></div>
+      <p class="exam-desc">Central seat allocation for all IITs, NITs, IIITs and GFTIs. All admissions happen exclusively through JoSAA after results.</p>
+      <div class="exam-meta"><span><strong>When:</strong> Jun–Jul 2026</span><span><strong>Rounds:</strong> 6 rounds</span></div>
+      <span class="exam-arrow">→</span>
+    </a>
+    <a class="exam-card pvt" href="bitsat.html">
+      <div class="exam-card-top"><span class="exam-title">BITSAT — BITS Pilani</span><span class="exam-tag tag-pvt">Private</span></div>
+      <p class="exam-desc">India's top private engineering university. Separate exam — JEE scores not used. Pilani / Goa / Hyderabad campuses.</p>
+      <div class="exam-meta"><span><strong>Score needed:</strong> 280+ for CSE</span><span><strong>Fees:</strong> ₹24–30L total</span></div>
+      <span class="exam-arrow">→</span>
+    </a>
+    <a class="exam-card pvt" href="private.html">
+      <div class="exam-card-top"><span class="exam-title">VITEEE / SRMJEEE / MET</span><span class="exam-tag tag-pvt">Private</span></div>
+      <p class="exam-desc">Good private college backup options. VIT, SRM, Manipal and state CETs. Register alongside JEE — no extra prep needed.</p>
+      <div class="exam-meta"><span><strong>Difficulty:</strong> Moderate</span><span><strong>When:</strong> Apr 2026</span></div>
+      <span class="exam-arrow">→</span>
+    </a>
+  </div>
+
+  <h2 class="section-title">Science &amp; Research</h2>
+  <div class="exam-grid">
+    <a class="exam-card sci" href="iiser.html">
+      <div class="exam-card-top"><span class="exam-title">IISER Aptitude Test</span><span class="exam-tag tag-sci">Science</span></div>
+      <p class="exam-desc">5-year BS-MS at 7 IISER campuses. Near-free education. For students who genuinely love science and want research careers.</p>
+      <div class="exam-meta"><span><strong>Fees:</strong> ~₹3–5L total (5yr)</span><span><strong>When:</strong> Jun 2026</span></div>
+      <span class="exam-arrow">→</span>
+    </a>
+    <a class="exam-card sci" href="isi-cmi.html">
+      <div class="exam-card-top"><span class="exam-title">ISI &amp; CMI</span><span class="exam-tag tag-sci">Math / Stats</span></div>
+      <p class="exam-desc">ISI Kolkata and CMI Chennai — world-class for Mathematics and Statistics. Olympiad-level difficulty. PhD path abroad.</p>
+      <div class="exam-meta"><span><strong>Difficulty:</strong> Very High</span><span><strong>Fees:</strong> ~₹1–6L total</span></div>
+      <span class="exam-arrow">→</span>
+    </a>
+  </div>
+
+  <h2 class="section-title">Design &amp; Architecture</h2>
+  <div class="exam-grid">
+    <a class="exam-card des" href="uceed.html">
+      <div class="exam-card-top"><span class="exam-title">UCEED — IIT Design</span><span class="exam-tag tag-des">Design</span></div>
+      <p class="exam-desc">B.Des at IIT Bombay, Delhi, Guwahati and more. Tests design aptitude and visualization — not PCM depth. ~225 total seats.</p>
+      <div class="exam-meta"><span><strong>When:</strong> Jan 2027</span><span><strong>Fees:</strong> ~₹1.5–2L/yr</span></div>
+      <span class="exam-arrow">→</span>
+    </a>
+    <a class="exam-card des" href="architecture.html">
+      <div class="exam-card-top"><span class="exam-title">NATA / JEE Paper 2</span><span class="exam-tag tag-des">Architecture</span></div>
+      <p class="exam-desc">5-year B.Arch program. Maths mandatory. Drawing aptitude essential. IIT Roorkee and SPA Delhi are top options.</p>
+      <div class="exam-meta"><span><strong>When:</strong> Apr–Jun 2026</span><span><strong>Difficulty:</strong> Moderate</span></div>
+      <span class="exam-arrow">→</span>
+    </a>
+  </div>
+
+  <h2 class="section-title">Defence &amp; Other Paths</h2>
+  <div class="exam-grid">
+    <a class="exam-card def" href="nda.html">
+      <div class="exam-card-top"><span class="exam-title">NDA — Defence Forces</span><span class="exam-tag tag-def">Defence</span></div>
+      <p class="exam-desc">Army / Navy / Air Force officer. PCM mandatory for Navy and Air Force wings. Free training + stipend. First attempt: Sep 2026.</p>
+      <div class="exam-meta"><span><strong>Cost:</strong> Free + Stipend</span><span><strong>1st attempt:</strong> Sep 2026</span></div>
+      <span class="exam-arrow">→</span>
+    </a>
+    <a class="exam-card def" href="merchant-navy.html">
+      <div class="exam-card-top"><span class="exam-title">IMU CET — Merchant Navy</span><span class="exam-tag tag-def">Marine</span></div>
+      <p class="exam-desc">Marine Engineering career. Chief Engineers earn ₹3–8 Lakh/month. PCM mandatory. Long sea postings — plan accordingly.</p>
+      <div class="exam-meta"><span><strong>Starting pay:</strong> ₹50K–1.5L/mo</span><span><strong>Fees:</strong> ₹8–15L</span></div>
+      <span class="exam-arrow">→</span>
+    </a>
+  </div>
+
+  <h2 class="section-title">Planning Tools</h2>
+  <div class="exam-grid">
+    <a class="exam-card plan" href="decision.html">
+      <div class="exam-card-top"><span class="exam-title">Decision Matrix</span><span class="exam-tag tag-plan">Planning</span></div>
+      <p class="exam-desc">Which exams to prioritize? Rank vs college vs branch guide. Core sequence every PCM student should follow.</p>
+      <span class="exam-arrow">→</span>
+    </a>
+    <a class="exam-card plan" href="calendar.html">
+      <div class="exam-card-top"><span class="exam-title">Exam Calendar 2026-27</span><span class="exam-tag tag-plan">Planning</span></div>
+      <p class="exam-desc">Month-by-month action plan for Class 11 and Class 12. Registration dates, exam dates, counselling timeline.</p>
+      <span class="exam-arrow">→</span>
+    </a>
+    <a class="exam-card plan" href="scholarships.html">
+      <div class="exam-card-top"><span class="exam-title">Scholarships</span><span class="exam-tag tag-plan">Financial Aid</span></div>
+      <p class="exam-desc">Government scholarships — full tuition waivers for IIT/NIT students with family income below ₹4.5 lakh/year.</p>
+      <span class="exam-arrow">→</span>
+    </a>
+    <a class="exam-card plan" href="websites.html">
+      <div class="exam-card-top"><span class="exam-title">Official Websites</span><span class="exam-tag tag-plan">Reference</span></div>
+      <p class="exam-desc">Direct links to all official exam and college websites. Always verify data here before applying.</p>
+      <span class="exam-arrow">→</span>
+    </a>
+  </div>
+
+  <div class="footer">Compiled for Indian PCM students · 2026-27 · Data from NTA, JoSAA, BITS Pilani, IIT official websites · Approximate — verify before applying</div>
+</main>
+<script>
+const sidebar=document.getElementById('sidebar');
+const overlay=document.getElementById('overlay');
+const hamburger=document.getElementById('hamburger');
+hamburger.addEventListener('click',()=>sidebar.classList.contains('open')?(sidebar.classList.remove('open'),overlay.classList.remove('show')):(sidebar.classList.add('open'),overlay.classList.add('show')));
+overlay.addEventListener('click',()=>{sidebar.classList.remove('open');overlay.classList.remove('show');});
+</script>
+</body>
+</html>
