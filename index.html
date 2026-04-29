@@ -8,257 +8,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
 
 :root {
-  --navy:    #0F2044;
-  --blue:    #1E4D9B;
-  --gold:    #D4880A;
-  --green:   #166534;
-  --gray:    #6B7280;
-  --bg:      #F7F8FC;
-  --white:   #FFFFFF;
-  --border:  #E2E8F0;
-  --text:    #1E293B;
-  --text-lt: #475569;
-  --header-h: 64px;
+  --navy:#0F2044;--blue:#1E4D9B;--gold:#D4880A;--green:#166534;
+  --gray:#6B7280;--bg:#F7F8FC;--white:#FFFFFF;--border:#E2E8F0;
+  --text:#1E293B;--text-lt:#475569;--header-h:64px;
 }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;min-height:100vh;}
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body {
-  font-family: 'DM Sans', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  font-size: 15px;
-  line-height: 1.7;
-  min-height: 100vh;
-}
+.topbar{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--header-h);background:var(--navy);display:flex;align-items:center;padding:0 28px;box-shadow:0 2px 16px rgba(0,0,0,0.3);}
+.topbar-logo{font-family:'Crimson Pro',serif;font-size:22px;font-weight:700;color:#fff;text-decoration:none;}
+.topbar-logo span{color:var(--gold);}
+.topbar-tag{margin-left:16px;font-size:12px;color:rgba(255,255,255,0.5);border-left:1px solid rgba(255,255,255,0.2);padding-left:14px;display:none;}
+@media(min-width:500px){.topbar-tag{display:block;}}
 
-.topbar {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  height: var(--header-h);
-  background: var(--navy);
-  display: flex; align-items: center; padding: 0 28px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.3);
-}
-.topbar-logo {
-  font-family: 'Crimson Pro', serif;
-  font-size: 22px; font-weight: 700;
-  color: #fff; text-decoration: none;
-}
-.topbar-logo span { color: var(--gold); }
-.topbar-tag {
-  margin-left: 16px;
-  font-size: 12px; color: rgba(255,255,255,0.5);
-  border-left: 1px solid rgba(255,255,255,0.2);
-  padding-left: 14px;
-  display: none;
-}
-@media(min-width:500px){ .topbar-tag { display: block; } }
+.page{padding-top:var(--header-h);min-height:100vh;display:flex;flex-direction:column;}
 
-.page {
-  padding-top: var(--header-h);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+.hero{background:linear-gradient(140deg,#0F2044 0%,#1a3a6e 60%,#1e4d9b 100%);color:#fff;text-align:center;padding:56px 24px 48px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:-60px;right:-60px;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,0.03);}
+.hero-label{display:inline-block;background:var(--gold);color:var(--navy);font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;padding:4px 12px;border-radius:4px;margin-bottom:18px;}
+.hero h1{font-family:'Crimson Pro',serif;font-size:clamp(26px,5vw,46px);font-weight:700;line-height:1.15;margin-bottom:14px;}
+.hero p{font-size:16px;color:rgba(255,255,255,0.72);max-width:540px;margin:0 auto;}
+.hero-disclaimer{display:inline-block;margin-top:22px;background:rgba(212,136,10,0.15);border:1px solid rgba(212,136,10,0.4);border-radius:6px;padding:8px 18px;font-size:12.5px;color:#fcd975;max-width:620px;}
 
-.hero {
-  background: linear-gradient(140deg, #0F2044 0%, #1a3a6e 60%, #1e4d9b 100%);
-  color: #fff;
-  text-align: center;
-  padding: 56px 24px 48px;
-  position: relative;
-  overflow: hidden;
-}
-.hero::before {
-  content: '';
-  position: absolute; top: -60px; right: -60px;
-  width: 300px; height: 300px; border-radius: 50%;
-  background: rgba(255,255,255,0.03);
-}
-.hero-label {
-  display: inline-block;
-  background: var(--gold); color: var(--navy);
-  font-size: 11px; font-weight: 700; letter-spacing: 1.2px;
-  text-transform: uppercase; padding: 4px 12px;
-  border-radius: 4px; margin-bottom: 18px;
-}
-.hero h1 {
-  font-family: 'Crimson Pro', serif;
-  font-size: clamp(26px, 5vw, 46px);
-  font-weight: 700; line-height: 1.15;
-  margin-bottom: 14px;
-}
-.hero p {
-  font-size: 16px; color: rgba(255,255,255,0.72);
-  max-width: 540px; margin: 0 auto;
-}
-.hero-disclaimer {
-  display: inline-block;
-  margin-top: 22px;
-  background: rgba(212,136,10,0.15);
-  border: 1px solid rgba(212,136,10,0.4);
-  border-radius: 6px;
-  padding: 8px 18px;
-  font-size: 12.5px;
-  color: #fcd975;
-  max-width: 620px;
-}
+.stream-section{padding:48px 24px 20px;max-width:1060px;margin:0 auto;width:100%;}
+.stream-heading{font-family:'Crimson Pro',serif;font-size:26px;font-weight:700;color:var(--navy);text-align:center;margin-bottom:8px;}
+.stream-sub{text-align:center;color:var(--text-lt);font-size:14.5px;margin-bottom:36px;}
 
-.stream-section {
-  padding: 48px 24px 20px;
-  max-width: 1060px;
-  margin: 0 auto;
-  width: 100%;
-}
-.stream-heading {
-  font-family: 'Crimson Pro', serif;
-  font-size: 26px; font-weight: 700;
-  color: var(--navy);
-  text-align: center;
-  margin-bottom: 8px;
-}
-.stream-sub {
-  text-align: center;
-  color: var(--text-lt);
-  font-size: 14.5px;
-  margin-bottom: 36px;
-}
+.stream-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;margin-bottom:48px;}
 
-.stream-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 22px;
-  margin-bottom: 48px;
-}
+.stream-card{border-radius:16px;padding:28px 24px 56px;text-decoration:none;color:#fff;position:relative;overflow:hidden;transition:transform .22s ease,box-shadow .22s ease;display:block;min-height:260px;}
+.stream-card:hover{transform:translateY(-5px);box-shadow:0 18px 44px rgba(0,0,0,0.2);}
+.stream-card::before{content:'';position:absolute;top:-30px;right:-30px;width:130px;height:130px;border-radius:50%;background:rgba(255,255,255,0.07);}
+.stream-card.maths{background:linear-gradient(135deg,#1E4D9B 0%,#2563EB 100%);}
+.stream-card.bio{background:linear-gradient(135deg,#166534 0%,#16a34a 100%);}
+.stream-card.comm{background:linear-gradient(135deg,#92400e 0%,#d97706 100%);}
+.stream-card.arts{background:linear-gradient(135deg,#5B21B6 0%,#7c3aed 100%);}
 
-.stream-card {
-  border-radius: 16px;
-  padding: 32px 26px 52px;
-  text-decoration: none;
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-  transition: transform .22s ease, box-shadow .22s ease;
-  display: block;
-  min-height: 260px;
-}
-.stream-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 18px 44px rgba(0,0,0,0.2);
-}
-.stream-card::before {
-  content: '';
-  position: absolute; top: -30px; right: -30px;
-  width: 130px; height: 130px; border-radius: 50%;
-  background: rgba(255,255,255,0.07);
-}
-.stream-card.maths { background: linear-gradient(135deg, #1E4D9B 0%, #2563EB 100%); }
-.stream-card.bio   { background: linear-gradient(135deg, #166534 0%, #16a34a 100%); }
-.stream-card.comm  { background: linear-gradient(135deg, #92400e 0%, #d97706 100%); }
-.stream-card.arts  { background: linear-gradient(135deg, #5B21B6 0%, #7c3aed 100%); }
+.stream-coming{position:absolute;top:14px;right:14px;background:rgba(255,255,255,0.22);border-radius:4px;padding:3px 10px;font-size:11px;font-weight:600;white-space:nowrap;}
+.stream-icon{font-size:38px;margin-bottom:12px;display:block;}
+.stream-card h2{font-family:'Crimson Pro',serif;font-size:24px;font-weight:700;margin-bottom:8px;word-break:break-word;}
+.stream-desc{font-size:13px;color:rgba(255,255,255,0.82);margin-bottom:16px;line-height:1.5;}
+.stream-exams{display:flex;flex-wrap:wrap;gap:6px;}
+.stream-exam-tag{background:rgba(255,255,255,0.18);border-radius:4px;padding:2px 8px;font-size:11px;font-weight:600;}
+.stream-arrow{position:absolute;bottom:20px;right:22px;font-size:22px;opacity:0.75;}
 
-.stream-coming {
-  position: absolute; top: 16px; right: 16px;
-  background: rgba(255,255,255,0.22);
-  border-radius: 4px;
-  padding: 3px 10px;
-  font-size: 11px; font-weight: 600;
-}
-.stream-icon { font-size: 40px; margin-bottom: 14px; display: block; }
-.stream-card h2 {
-  font-family: 'Crimson Pro', serif;
-  font-size: 26px; font-weight: 700;
-  margin-bottom: 8px;
-}
-.stream-desc {
-  font-size: 13.5px;
-  color: rgba(255,255,255,0.8);
-  margin-bottom: 18px;
-  line-height: 1.5;
-}
-.stream-exams {
-  display: flex; flex-wrap: wrap; gap: 6px;
-}
-.stream-exam-tag {
-  background: rgba(255,255,255,0.18);
-  border-radius: 4px;
-  padding: 2px 9px;
-  font-size: 11.5px;
-  font-weight: 600;
-}
-.stream-arrow {
-  position: absolute; bottom: 22px; right: 24px;
-  font-size: 22px; opacity: 0.75;
-}
+.stats-section{background:var(--white);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:36px 24px;}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;max-width:1060px;margin:0 auto;text-align:center;}
+.stat-val{font-family:'Crimson Pro',serif;font-size:34px;font-weight:700;color:var(--blue);}
+.stat-label{font-size:13px;color:var(--text-lt);margin-top:2px;}
 
-.stats-section {
-  background: var(--white);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  padding: 36px 24px;
-}
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 16px;
-  max-width: 1060px;
-  margin: 0 auto;
-  text-align: center;
-}
-.stat-val {
-  font-family: 'Crimson Pro', serif;
-  font-size: 34px; font-weight: 700;
-  color: var(--blue);
-}
-.stat-label { font-size: 13px; color: var(--text-lt); margin-top: 2px; }
+.how-section{padding:44px 24px 20px;max-width:1060px;margin:0 auto;width:100%;}
+.how-heading{font-family:'Crimson Pro',serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:24px;text-align:center;}
+.how-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;}
+.how-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:20px;text-align:center;}
+.how-num{width:32px;height:32px;background:var(--navy);color:#fff;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;margin-bottom:10px;}
+.how-card h3{font-size:14px;font-weight:600;margin-bottom:5px;color:var(--navy);}
+.how-card p{font-size:13px;color:var(--text-lt);}
 
-.how-section {
-  padding: 44px 24px 20px;
-  max-width: 1060px;
-  margin: 0 auto;
-  width: 100%;
-}
-.how-heading {
-  font-family: 'Crimson Pro', serif;
-  font-size: 22px; font-weight: 700;
-  color: var(--navy); margin-bottom: 24px;
-  text-align: center;
-}
-.how-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 14px;
-}
-.how-card {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-}
-.how-num {
-  width: 32px; height: 32px;
-  background: var(--navy); color: #fff;
-  border-radius: 50%;
-  display: inline-flex; align-items: center; justify-content: center;
-  font-size: 14px; font-weight: 700;
-  margin-bottom: 10px;
-}
-.how-card h3 { font-size: 14px; font-weight: 600; margin-bottom: 5px; color: var(--navy); }
-.how-card p  { font-size: 13px; color: var(--text-lt); }
+.footer{margin-top:auto;padding:24px;border-top:1px solid var(--border);text-align:center;font-size:13px;color:var(--gray);}
 
-.footer {
-  margin-top: auto;
-  padding: 24px;
-  border-top: 1px solid var(--border);
-  text-align: center;
-  font-size: 13px; color: var(--gray);
-}
-
-@media(max-width:600px){
-  .stream-grid { grid-template-columns: 1fr; }
-  .hero { padding: 40px 20px 36px; }
-}
+@media(max-width:600px){.stream-grid{grid-template-columns:1fr;}.hero{padding:40px 20px 36px;}}
 </style>
 </head>
 <body>
@@ -271,9 +81,9 @@ body {
 <div class="page">
 
   <div class="hero">
-    <div class="hero-label">Free · No Ads · No Coaching Bias</div>
+    <div class="hero-label">India · 2026-27 Admission Cycle</div>
     <h1>Complete Career Guidance<br>for Class 11–12 Students</h1>
-    <p>Choose your stream. Get exam details, college cutoffs, real fees, and career paths — all in one place.</p>
+    <p>Choose your stream. Get exam details, college cutoffs, fees, and career paths — all in one place.</p>
     <div class="hero-disclaimer">
       ⚠ Cutoffs shown are from 2024-25 official data. Always verify at official websites before applying.
     </div>
@@ -333,7 +143,7 @@ body {
       <a class="stream-card arts" href="arts.html">
         <span class="stream-coming">Coming Soon</span>
         <span class="stream-icon">🎨</span>
-        <h2>Arts / Humanities</h2>
+        <h2>Arts &amp; Humanities</h2>
         <p class="stream-desc">Arts students — law, design, journalism, civil services and creative fields.</p>
         <div class="stream-exams">
           <span class="stream-exam-tag">CLAT</span>
@@ -353,7 +163,6 @@ body {
       <div><div class="stat-val">4</div><div class="stat-label">Streams Covered</div></div>
       <div><div class="stat-val">30+</div><div class="stat-label">Entrance Exams</div></div>
       <div><div class="stat-val">500+</div><div class="stat-label">Colleges Mapped</div></div>
-      <div><div class="stat-val">Free</div><div class="stat-label">No Ads · No Coaching</div></div>
       <div><div class="stat-val">2026-27</div><div class="stat-label">Latest Cycle Data</div></div>
     </div>
   </div>
@@ -361,9 +170,9 @@ body {
   <div class="how-section">
     <h2 class="how-heading">What You Will Find in Each Stream</h2>
     <div class="how-grid">
-      <div class="how-card"><div class="how-num">1</div><h3>All Entrance Exams</h3><p>Eligibility, pattern, key dates for every exam</p></div>
+      <div class="how-card"><div class="how-num">1</div><h3>All Entrance Exams</h3><p>Eligibility, pattern and key dates for every exam</p></div>
       <div class="how-card"><div class="how-num">2</div><h3>College Cutoffs</h3><p>Rank and score needed for each college and branch</p></div>
-      <div class="how-card"><div class="how-num">3</div><h3>Real Fees</h3><p>Tuition + hostel = actual 4-year cost</p></div>
+      <div class="how-card"><div class="how-num">3</div><h3>Fee Structure</h3><p>Tuition and hostel cost — actual 4-year estimate</p></div>
       <div class="how-card"><div class="how-num">4</div><h3>Placement Data</h3><p>Average and highest packages from recent placements</p></div>
       <div class="how-card"><div class="how-num">5</div><h3>Career Paths</h3><p>Jobs and roles each degree leads to</p></div>
       <div class="how-card"><div class="how-num">6</div><h3>Exam Calendar</h3><p>Month-by-month action plan for Class 11 and 12</p></div>
@@ -375,6 +184,5 @@ body {
   </div>
 
 </div>
-
 </body>
 </html>
