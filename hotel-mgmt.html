@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Hotel Management — NCHMCT JEE — Career Guide India 2026-27</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
+:root{--navy:#0F2044;--blue:#1E4D9B;--gold:#D4880A;--green:#166534;--green-lt:#DCFCE7;--orange:#9A3412;--orange-lt:#FFEDD5;--purple:#5B21B6;--purple-lt:#EDE9FE;--teal:#0F766E;--teal-lt:#CCFBF1;--gray:#6B7280;--bg:#F7F8FC;--white:#FFFFFF;--border:#E2E8F0;--text:#1E293B;--text-lt:#475569;--sidebar-w:260px;--header-h:60px;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;}
+.topbar{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--header-h);background:var(--navy);display:flex;align-items:center;gap:16px;padding:0 20px;box-shadow:0 2px 12px rgba(0,0,0,0.25);}
+.topbar-logo{font-family:'Crimson Pro',serif;font-size:20px;font-weight:700;color:#fff;text-decoration:none;}
+.topbar-logo span{color:var(--gold);}
+.topbar-back{font-size:13px;color:rgba(255,255,255,0.6);text-decoration:none;}
+.topbar-back:hover{color:#fff;}
+.hamburger{margin-left:auto;background:none;border:none;cursor:pointer;color:#fff;font-size:22px;padding:4px 8px;}
+@media(min-width:900px){.hamburger{display:none;}}
+.sidebar{position:fixed;top:var(--header-h);left:0;bottom:0;width:var(--sidebar-w);background:var(--white);border-right:1px solid var(--border);overflow-y:auto;z-index:90;transform:translateX(-100%);transition:transform .28s ease;}
+.sidebar.open{transform:translateX(0);}
+@media(min-width:900px){.sidebar{transform:translateX(0);}}
+.sidebar-section{padding:8px 0;border-bottom:1px solid var(--border);}
+.sidebar-label{font-size:10px;font-weight:600;letter-spacing:1.2px;color:var(--gray);text-transform:uppercase;padding:10px 18px 4px;}
+.sidebar a{display:flex;align-items:center;gap:10px;padding:9px 18px;font-size:13.5px;color:var(--text-lt);text-decoration:none;border-left:3px solid transparent;transition:all .18s;}
+.sidebar a:hover{background:var(--bg);color:var(--navy);}
+.sidebar a.active{background:#FFF3D6;color:var(--orange);border-left-color:var(--orange);font-weight:600;}
+.badge{margin-left:auto;font-size:11px;padding:1px 7px;border-radius:10px;font-weight:600;}
+.badge-comm{background:var(--orange-lt);color:var(--orange);}
+.badge-law{background:var(--purple-lt);color:var(--purple);}
+.badge-plan{background:#FFF3D6;color:#7a4f00;}
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:85;}
+.overlay.show{display:block;}
+.main{margin-left:0;margin-top:var(--header-h);padding:32px 20px 60px;}
+@media(min-width:900px){.main{margin-left:var(--sidebar-w);padding:40px 48px 80px;}}
+.hero{border-radius:14px;padding:36px 32px;margin-bottom:32px;position:relative;overflow:hidden;color:#fff;}
+.hero::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,0.06);}
+.hero.orange{background:linear-gradient(135deg,#92400e 0%,#d97706 100%);}
+.hero.purple{background:linear-gradient(135deg,#5B21B6 0%,#7c3aed 100%);}
+.hero.teal{background:linear-gradient(135deg,#0F766E 0%,#0d9488 100%);}
+.hero.blue{background:linear-gradient(135deg,#1E4D9B 0%,#2563EB 100%);}
+.hero-badge{display:inline-block;background:rgba(255,255,255,0.2);color:#fff;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 10px;border-radius:4px;margin-bottom:12px;}
+.hero h1{font-family:'Crimson Pro',serif;font-size:clamp(22px,4vw,34px);font-weight:700;line-height:1.2;margin-bottom:10px;}
+.hero p{font-size:15px;color:rgba(255,255,255,0.82);max-width:580px;}
+.hero-meta{display:flex;flex-wrap:wrap;gap:20px;margin-top:18px;}
+.hero-meta-item{font-size:13px;color:rgba(255,255,255,0.65);}
+.hero-meta-item strong{color:#fff;display:block;font-size:15px;}
+.back-btn{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);color:#fff;text-decoration:none;padding:7px 16px;border-radius:6px;font-size:13px;font-weight:600;margin-top:16px;}
+.back-btn:hover{background:rgba(255,255,255,0.25);}
+.disclaimer{background:#FFF3D6;border:1px solid #F5D580;border-radius:8px;padding:12px 16px;font-size:13px;color:#7a4f00;margin:16px 0;}
+.section-title{font-family:'Crimson Pro',serif;font-size:20px;font-weight:700;color:var(--navy);margin:32px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--border);}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:10px;box-shadow:0 1px 6px rgba(0,0,0,0.07);}
+table{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--white);}
+table thead tr{background:var(--navy);color:#fff;}
+table thead th{padding:11px 14px;text-align:left;font-weight:600;font-size:12.5px;white-space:nowrap;}
+table tbody tr{border-bottom:1px solid var(--border);}
+table tbody tr:last-child{border-bottom:none;}
+table tbody tr:hover{background:#F8FAFF;}
+table tbody td{padding:10px 14px;vertical-align:top;}
+table tbody tr:nth-child(even) td{background:#FAFBFE;}
+.td-good{color:var(--green);font-weight:600;}.td-warn{color:var(--orange);font-weight:600;}
+.td-red{color:#991B1B;font-weight:600;}.td-bold{font-weight:600;}.td-center{text-align:center;}
+.callout{border-radius:8px;padding:14px 18px;margin:14px 0;font-size:14px;border-left:4px solid;}
+.callout-note{background:#EEF3FB;border-color:var(--blue);color:#1e3a6e;}
+.callout-good{background:var(--green-lt);border-color:var(--green);color:var(--green);}
+.callout-warn{background:var(--orange-lt);border-color:var(--orange);color:var(--orange);}
+.callout-info{background:#FFF3D6;border-color:var(--gold);color:#7a4f00;}
+p{margin-bottom:10px;color:var(--text);}
+ul{margin:8px 0 12px 20px;}
+ul li{margin-bottom:6px;font-size:14px;color:var(--text-lt);}
+.footer{margin-top:60px;padding:24px;border-top:1px solid var(--border);text-align:center;font-size:13px;color:var(--gray);}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="topbar-logo" href="index.html">Career<span>Guide</span>.in</a>
+  <a class="topbar-back" href="commerce.html">← Commerce</a>
+  <button class="hamburger" id="hamburger">&#9776;</button>
+</header>
+<div class="overlay" id="overlay"></div>
+<nav class="sidebar" id="sidebar">
+  <div class="sidebar-section"><div class="sidebar-label">← Back</div><a href="index.html">🏠 All Streams</a><a href="commerce.html">📊 Commerce</a></div>
+  <div class="sidebar-section"><div class="sidebar-label">Commerce Exams</div>
+    <a href="cuet.html">CUET — Central Universities <span class="badge badge-comm">1</span></a>
+    <a href="ipmat.html">IPMAT — IIM Integrated MBA <span class="badge badge-comm">2</span></a>
+    <a href="ca-foundation.html">CA Foundation — ICAI <span class="badge badge-comm">3</span></a>
+    <a href="bba.html">BBA Entrances <span class="badge badge-comm">4</span></a>
+    <a href="clat.html">CLAT — Law / NLUs <span class="badge badge-law">5</span></a>
+    <a href="hotel-mgmt.html">Hotel Management <span class="badge badge-comm">6</span></a>
+  </div>
+  <div class="sidebar-section"><div class="sidebar-label">Planning</div>
+    <a href="commerce-careers.html">Career Paths <span class="badge badge-plan">7</span></a>
+    <a href="websites.html">Official Websites</a>
+  </div>
+</nav>
+<main class="main">
+  <div class="hero orange">
+    <div class="hero-badge">Commerce Exam 6 · Hospitality</div>
+    <h1>Hotel Management — NCHMCT JEE</h1>
+    <p>Admission to 75+ Institute of Hotel Management (IHM) colleges run by the Ministry of Tourism, Government of India. Strong international career potential in hospitality.</p>
+    <div class="hero-meta"><div class="hero-meta-item"><strong>Conducted by</strong>NTA on behalf of NCHMCT</div><div class="hero-meta-item"><strong>Top IHMs</strong>Delhi, Mumbai, Chennai, Kolkata</div><div class="hero-meta-item"><strong>Program</strong>3-year BSc Hospitality &amp; Hotel Administration</div><div class="hero-meta-item"><strong>When</strong>April 2026</div></div>
+    <a class="back-btn" href="commerce.html">← Back to Commerce</a>
+  </div>
+  <div class="disclaimer">&#9888; NCHMCT JEE data from NTA official. IHM fees from Ministry of Tourism and individual IHM websites. Verify at <strong>nchmct.nic.in</strong></div>
+  
+  <h2 class="section-title">Eligibility</h2>
+  <ul>
+    <li>Class 12 passed from any recognized board — any stream</li>
+    <li>Minimum 50% aggregate in Class 12 (45% for SC/ST/PwD)</li>
+    <li>English must be one of the subjects in Class 12</li>
+    <li>Age: Maximum 22 years for General (25 for SC/ST/PwD)</li>
+  </ul>
+
+  <h2 class="section-title">Exam Pattern</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Section</th><th>Questions</th><th>Marks</th></tr></thead>
+    <tbody>
+      <tr><td class="td-bold">Numerical Ability &amp; Analytical Aptitude</td><td class="td-center">30</td><td class="td-center">30</td></tr>
+      <tr><td class="td-bold">Reasoning &amp; Logical Deduction</td><td class="td-center">30</td><td class="td-center">30</td></tr>
+      <tr><td class="td-bold">General Knowledge &amp; Current Affairs</td><td class="td-center">30</td><td class="td-center">30</td></tr>
+      <tr><td class="td-bold">English Language</td><td class="td-center">60</td><td class="td-center">60</td></tr>
+      <tr><td class="td-bold">Aptitude for Service Sector</td><td class="td-center">50</td><td class="td-center">50</td></tr>
+      <tr style="background:#EEF3FB"><td class="td-bold">Total</td><td class="td-center td-bold">200</td><td class="td-center td-bold">200 marks · 3 hours</td></tr>
+    </tbody>
+  </table></div>
+  <p style="font-size:13px;color:var(--text-lt)">Marking: +1 correct, −0.25 wrong. Computer-Based Test.</p>
+
+  <h2 class="section-title">Top IHM Colleges &amp; Fees</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>IHM College</th><th>Location</th><th>Annual Fee (approx)</th><th>Total 3yr</th></tr></thead>
+    <tbody>
+      <tr><td class="td-bold">IHM Pusa (New Delhi)</td><td>Delhi</td><td>₹90,000–1.1 Lakh</td><td class="td-good">~₹3 Lakh</td></tr>
+      <tr><td class="td-bold">IHM Mumbai</td><td>Mumbai</td><td>₹90,000–1.1 Lakh</td><td class="td-good">~₹3 Lakh</td></tr>
+      <tr><td class="td-bold">IHM Chennai</td><td>Chennai</td><td>₹90,000–1.1 Lakh</td><td class="td-good">~₹3 Lakh</td></tr>
+      <tr><td class="td-bold">IHM Kolkata</td><td>Kolkata</td><td>₹90,000–1.1 Lakh</td><td class="td-good">~₹3 Lakh</td></tr>
+      <tr><td class="td-bold">IHM Bangalore / Hyderabad</td><td>South India</td><td>₹80,000–1 Lakh</td><td class="td-good">~₹2.5–3 Lakh</td></tr>
+    </tbody>
+  </table></div>
+  <div class="callout callout-good">Government IHMs are among the most affordable professional colleges in India. Total 3-year cost including hostel is approximately ₹5–7 Lakh at most central IHMs.</div>
+
+  <h2 class="section-title">Career After IHM</h2>
+  <ul>
+    <li><strong>Hotel Industry</strong> — Front Office, F&amp;B, Housekeeping, Kitchen Management at 5-star hotels (Taj, Marriott, Hyatt, ITC, Oberoi)</li>
+    <li><strong>Starting salary</strong> — ₹3–5 LPA. Mid-career: ₹8–15 LPA. General Manager roles: ₹25–50 LPA</li>
+    <li><strong>International opportunities</strong> — Hotel management has strong global mobility. IHM graduates work in Dubai, Singapore, Europe, cruise ships</li>
+    <li><strong>Airlines &amp; Hospitality</strong> — Cabin crew, airport lounges, airline catering</li>
+    <li><strong>Food &amp; Beverage industry</strong> — Restaurant management, catering companies</li>
+    <li><strong>Higher education</strong> — MSc Hospitality Management abroad (Switzerland, Australia, UK)</li>
+  </ul>
+  
+  <div class="footer">Compiled for Indian Commerce students · 2026-27 · Data from official sources · Approximate — verify before applying</div>
+</main>
+<script>
+const sidebar=document.getElementById('sidebar');
+const overlay=document.getElementById('overlay');
+document.getElementById('hamburger').addEventListener('click',()=>{sidebar.classList.toggle('open');overlay.classList.toggle('show');});
+overlay.addEventListener('click',()=>{sidebar.classList.remove('open');overlay.classList.remove('show');});
+</script>
+</body>
+</html>

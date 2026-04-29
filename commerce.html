@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Commerce Stream — Career Guide India 2026-27</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
+:root{--navy:#0F2044;--blue:#1E4D9B;--gold:#D4880A;--green:#166534;--green-lt:#DCFCE7;--orange:#9A3412;--orange-lt:#FFEDD5;--purple:#5B21B6;--purple-lt:#EDE9FE;--teal:#0F766E;--teal-lt:#CCFBF1;--gray:#6B7280;--bg:#F7F8FC;--white:#FFFFFF;--border:#E2E8F0;--text:#1E293B;--text-lt:#475569;--sidebar-w:260px;--header-h:60px;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;}
+.topbar{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--header-h);background:var(--navy);display:flex;align-items:center;gap:16px;padding:0 20px;box-shadow:0 2px 12px rgba(0,0,0,0.25);}
+.topbar-logo{font-family:'Crimson Pro',serif;font-size:20px;font-weight:700;color:#fff;text-decoration:none;}
+.topbar-logo span{color:var(--gold);}
+.topbar-back{font-size:13px;color:rgba(255,255,255,0.6);text-decoration:none;}
+.topbar-back:hover{color:#fff;}
+.hamburger{margin-left:auto;background:none;border:none;cursor:pointer;color:#fff;font-size:22px;padding:4px 8px;}
+@media(min-width:900px){.hamburger{display:none;}}
+.sidebar{position:fixed;top:var(--header-h);left:0;bottom:0;width:var(--sidebar-w);background:var(--white);border-right:1px solid var(--border);overflow-y:auto;z-index:90;transform:translateX(-100%);transition:transform .28s ease;}
+.sidebar.open{transform:translateX(0);}
+@media(min-width:900px){.sidebar{transform:translateX(0);}}
+.sidebar-section{padding:8px 0;border-bottom:1px solid var(--border);}
+.sidebar-label{font-size:10px;font-weight:600;letter-spacing:1.2px;color:var(--gray);text-transform:uppercase;padding:10px 18px 4px;}
+.sidebar a{display:flex;align-items:center;gap:10px;padding:9px 18px;font-size:13.5px;color:var(--text-lt);text-decoration:none;border-left:3px solid transparent;transition:all .18s;}
+.sidebar a:hover{background:var(--bg);color:var(--navy);}
+.sidebar a.active{background:#FFF3D6;color:var(--orange);border-left-color:var(--orange);font-weight:600;}
+.badge{margin-left:auto;font-size:11px;padding:1px 7px;border-radius:10px;font-weight:600;}
+.badge-comm{background:var(--orange-lt);color:var(--orange);}
+.badge-law{background:var(--purple-lt);color:var(--purple);}
+.badge-plan{background:#FFF3D6;color:#7a4f00;}
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:85;}
+.overlay.show{display:block;}
+.main{margin-left:0;margin-top:var(--header-h);padding:32px 20px 60px;}
+@media(min-width:900px){.main{margin-left:var(--sidebar-w);padding:40px 48px 80px;}}
+.hero{background:linear-gradient(135deg,#92400e 0%,#d97706 100%);color:#fff;border-radius:14px;padding:36px 32px;margin-bottom:36px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,0.06);}
+.hero-badge{display:inline-block;background:rgba(255,255,255,0.2);color:#fff;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 10px;border-radius:4px;margin-bottom:12px;}
+.hero h1{font-family:'Crimson Pro',serif;font-size:clamp(24px,4vw,36px);font-weight:700;line-height:1.2;margin-bottom:10px;}
+.hero p{font-size:15px;color:rgba(255,255,255,0.82);max-width:580px;}
+.back-btn{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);color:#fff;text-decoration:none;padding:7px 16px;border-radius:6px;font-size:13px;font-weight:600;margin-top:18px;}
+.back-btn:hover{background:rgba(255,255,255,0.25);}
+.section-title{font-family:'Crimson Pro',serif;font-size:20px;font-weight:700;color:var(--navy);margin:32px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--border);}
+.exam-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin:16px 0;}
+.exam-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:20px;text-decoration:none;color:var(--text);transition:box-shadow .2s,transform .2s;display:block;position:relative;border-left:4px solid var(--orange);}
+.exam-card:hover{box-shadow:0 4px 16px rgba(0,0,0,0.1);transform:translateY(-2px);}
+.exam-card.law{border-left-color:var(--purple);}
+.exam-card.ca{border-left-color:var(--teal);}
+.exam-card.plan{border-left-color:var(--gold);}
+.exam-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;}
+.exam-title{font-weight:700;font-size:15px;color:var(--navy);}
+.exam-tag{font-size:11px;font-weight:600;padding:2px 8px;border-radius:4px;}
+.tag-comm{background:var(--orange-lt);color:var(--orange);}
+.tag-law{background:var(--purple-lt);color:var(--purple);}
+.tag-ca{background:var(--teal-lt);color:var(--teal);}
+.tag-plan{background:#FFF3D6;color:#7a4f00;}
+.exam-desc{font-size:13px;color:var(--text-lt);margin-bottom:10px;line-height:1.5;}
+.exam-meta{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--gray);}
+.exam-meta span strong{color:var(--text);font-weight:600;}
+.exam-arrow{display:block;text-align:right;color:var(--orange);font-weight:700;margin-top:10px;}
+.exam-arrow.law{color:var(--purple);}
+.footer{margin-top:60px;padding:24px;border-top:1px solid var(--border);text-align:center;font-size:13px;color:var(--gray);}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="topbar-logo" href="index.html">Career<span>Guide</span>.in</a>
+  <a class="topbar-back" href="index.html">← All Streams</a>
+  <button class="hamburger" id="hamburger">&#9776;</button>
+</header>
+<div class="overlay" id="overlay"></div>
+<nav class="sidebar" id="sidebar">
+  <div class="sidebar-section"><div class="sidebar-label">← Back</div><a href="index.html">🏠 All Streams</a></div>
+  <div class="sidebar-section"><div class="sidebar-label">Commerce Exams</div>
+    <a href="cuet.html">CUET — Central Universities <span class="badge badge-comm">1</span></a>
+    <a href="ipmat.html">IPMAT — IIM Integrated MBA <span class="badge badge-comm">2</span></a>
+    <a href="ca-foundation.html">CA Foundation — ICAI <span class="badge badge-comm">3</span></a>
+    <a href="bba.html">BBA Entrances — DU JAT, SET <span class="badge badge-comm">4</span></a>
+    <a href="clat.html">CLAT — Law / NLUs <span class="badge badge-law">5</span></a>
+    <a href="hotel-mgmt.html">Hotel Management — NCHMCT <span class="badge badge-comm">6</span></a>
+  </div>
+  <div class="sidebar-section"><div class="sidebar-label">Planning</div>
+    <a href="commerce-careers.html">Career Paths <span class="badge badge-plan">7</span></a>
+    <a href="websites.html">Official Websites <span class="badge badge-plan">Ref</span></a>
+  </div>
+</nav>
+<main class="main">
+
+  <div class="hero">
+    <div class="hero-badge">Commerce Stream · 2026-27</div>
+    <h1>Commerce Stream<br>Career Guide</h1>
+    <p>Complete guide for Commerce students — entrances, colleges, cutoffs and career paths for CA, management, law, BBA, hotel management and more.</p>
+    <a class="back-btn" href="index.html">← Back to All Streams</a>
+  </div>
+
+  <h2 class="section-title">Commerce Entrance Exams</h2>
+  <div class="exam-grid">
+
+    <a class="exam-card" href="cuet.html">
+      <div class="exam-card-top"><span class="exam-title">CUET — Central Universities</span><span class="exam-tag tag-comm">University</span></div>
+      <p class="exam-desc">Gateway to DU (SRCC, Hindu, LSR), JNU, BHU and 250+ central universities. Mandatory for BCom, BA Economics, and other UG programs at these universities.</p>
+      <div class="exam-meta"><span><strong>Top College:</strong> SRCC BCom — 917/1000</span><span><strong>When:</strong> May 2026</span></div>
+      <span class="exam-arrow">View Details →</span>
+    </a>
+
+    <a class="exam-card" href="ipmat.html">
+      <div class="exam-card-top"><span class="exam-title">IPMAT — IIM Integrated MBA</span><span class="exam-tag tag-comm">Management</span></div>
+      <p class="exam-desc">5-year Integrated Programme in Management at IIM Indore, IIM Rohtak and others. Direct IIM entry after Class 12 — no need to wait for CAT after graduation.</p>
+      <div class="exam-meta"><span><strong>IIM Indore seats:</strong> 150</span><span><strong>When:</strong> May 2026</span></div>
+      <span class="exam-arrow">View Details →</span>
+    </a>
+
+    <a class="exam-card ca" href="ca-foundation.html">
+      <div class="exam-card-top"><span class="exam-title">CA Foundation — ICAI</span><span class="exam-tag tag-ca">Professional</span></div>
+      <p class="exam-desc">First step towards becoming a Chartered Accountant. One of India's most respected professional qualifications. All streams eligible. Start after Class 10.</p>
+      <div class="exam-meta"><span><strong>Pass criteria:</strong> 40% per paper + 50% aggregate</span></div>
+      <span class="exam-arrow">View Details →</span>
+    </a>
+
+    <a class="exam-card" href="bba.html">
+      <div class="exam-card-top"><span class="exam-title">BBA Entrances — DU JAT, SET, NPAT</span><span class="exam-tag tag-comm">Management</span></div>
+      <p class="exam-desc">BBA programs at DU (JAT), Symbiosis (SET), NMIMS (NPAT), Christ University and others. 3-year management degree leading to MBA or corporate jobs.</p>
+      <div class="exam-meta"><span><strong>When:</strong> Apr–Jun 2026</span><span><strong>All streams eligible</strong></span></div>
+      <span class="exam-arrow">View Details →</span>
+    </a>
+
+    <a class="exam-card law" href="clat.html">
+      <div class="exam-card-top"><span class="exam-title">CLAT — Law / NLUs</span><span class="exam-tag tag-law">Law</span></div>
+      <p class="exam-desc">Common Law Admission Test for 25 National Law Universities. 5-year BA LLB program. Top NLUs rival IITs in prestige. All streams eligible.</p>
+      <div class="exam-meta"><span><strong>NLSIU Bangalore rank:</strong> &lt;112 (Gen)</span><span><strong>When:</strong> Dec 2026</span></div>
+      <span class="exam-arrow law">View Details →</span>
+    </a>
+
+    <a class="exam-card" href="hotel-mgmt.html">
+      <div class="exam-card-top"><span class="exam-title">Hotel Management — NCHMCT JEE</span><span class="exam-tag tag-comm">Hospitality</span></div>
+      <p class="exam-desc">Admission to 75+ Institute of Hotel Management (IHM) colleges run by Ministry of Tourism. 3-year BSc Hospitality. Strong international career potential.</p>
+      <div class="exam-meta"><span><strong>When:</strong> Apr 2026</span><span><strong>Top IHMs:</strong> Delhi, Mumbai, Chennai</span></div>
+      <span class="exam-arrow">View Details →</span>
+    </a>
+
+  </div>
+
+  <h2 class="section-title">Career Paths After Commerce</h2>
+  <div class="exam-grid">
+    <a class="exam-card plan" href="commerce-careers.html">
+      <div class="exam-card-top"><span class="exam-title">Commerce Career Paths</span><span class="exam-tag tag-plan">Guide</span></div>
+      <p class="exam-desc">Which path leads where — CA, MBA, Law, Banking, Civil Services, Entrepreneurship. Career comparison and salary data.</p>
+      <span class="exam-arrow" style="color:var(--gold)">View Details →</span>
+    </a>
+    <a class="exam-card plan" href="websites.html">
+      <div class="exam-card-top"><span class="exam-title">Official Websites</span><span class="exam-tag tag-plan">Reference</span></div>
+      <p class="exam-desc">Direct links to all official exam and college websites. Always verify data before applying.</p>
+      <span class="exam-arrow" style="color:var(--gold)">View Details →</span>
+    </a>
+  </div>
+
+  <div class="footer">Compiled for Indian Commerce students · 2026-27 · Data from ICAI, NTA, Consortium of NLUs, IIM official websites · Approximate — verify before applying</div>
+</main>
+<script>
+const sidebar=document.getElementById('sidebar');
+const overlay=document.getElementById('overlay');
+document.getElementById('hamburger').addEventListener('click',()=>{sidebar.classList.toggle('open');overlay.classList.toggle('show');});
+overlay.addEventListener('click',()=>{sidebar.classList.remove('open');overlay.classList.remove('show');});
+</script>
+</body>
+</html>

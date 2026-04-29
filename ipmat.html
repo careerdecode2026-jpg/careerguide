@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>IPMAT — IIM Integrated MBA — Career Guide India 2026-27</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
+:root{--navy:#0F2044;--blue:#1E4D9B;--gold:#D4880A;--green:#166534;--green-lt:#DCFCE7;--orange:#9A3412;--orange-lt:#FFEDD5;--purple:#5B21B6;--purple-lt:#EDE9FE;--teal:#0F766E;--teal-lt:#CCFBF1;--gray:#6B7280;--bg:#F7F8FC;--white:#FFFFFF;--border:#E2E8F0;--text:#1E293B;--text-lt:#475569;--sidebar-w:260px;--header-h:60px;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;}
+.topbar{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--header-h);background:var(--navy);display:flex;align-items:center;gap:16px;padding:0 20px;box-shadow:0 2px 12px rgba(0,0,0,0.25);}
+.topbar-logo{font-family:'Crimson Pro',serif;font-size:20px;font-weight:700;color:#fff;text-decoration:none;}
+.topbar-logo span{color:var(--gold);}
+.topbar-back{font-size:13px;color:rgba(255,255,255,0.6);text-decoration:none;}
+.topbar-back:hover{color:#fff;}
+.hamburger{margin-left:auto;background:none;border:none;cursor:pointer;color:#fff;font-size:22px;padding:4px 8px;}
+@media(min-width:900px){.hamburger{display:none;}}
+.sidebar{position:fixed;top:var(--header-h);left:0;bottom:0;width:var(--sidebar-w);background:var(--white);border-right:1px solid var(--border);overflow-y:auto;z-index:90;transform:translateX(-100%);transition:transform .28s ease;}
+.sidebar.open{transform:translateX(0);}
+@media(min-width:900px){.sidebar{transform:translateX(0);}}
+.sidebar-section{padding:8px 0;border-bottom:1px solid var(--border);}
+.sidebar-label{font-size:10px;font-weight:600;letter-spacing:1.2px;color:var(--gray);text-transform:uppercase;padding:10px 18px 4px;}
+.sidebar a{display:flex;align-items:center;gap:10px;padding:9px 18px;font-size:13.5px;color:var(--text-lt);text-decoration:none;border-left:3px solid transparent;transition:all .18s;}
+.sidebar a:hover{background:var(--bg);color:var(--navy);}
+.sidebar a.active{background:#FFF3D6;color:var(--orange);border-left-color:var(--orange);font-weight:600;}
+.badge{margin-left:auto;font-size:11px;padding:1px 7px;border-radius:10px;font-weight:600;}
+.badge-comm{background:var(--orange-lt);color:var(--orange);}
+.badge-law{background:var(--purple-lt);color:var(--purple);}
+.badge-plan{background:#FFF3D6;color:#7a4f00;}
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:85;}
+.overlay.show{display:block;}
+.main{margin-left:0;margin-top:var(--header-h);padding:32px 20px 60px;}
+@media(min-width:900px){.main{margin-left:var(--sidebar-w);padding:40px 48px 80px;}}
+.hero{border-radius:14px;padding:36px 32px;margin-bottom:32px;position:relative;overflow:hidden;color:#fff;}
+.hero::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,0.06);}
+.hero.orange{background:linear-gradient(135deg,#92400e 0%,#d97706 100%);}
+.hero.purple{background:linear-gradient(135deg,#5B21B6 0%,#7c3aed 100%);}
+.hero.teal{background:linear-gradient(135deg,#0F766E 0%,#0d9488 100%);}
+.hero.blue{background:linear-gradient(135deg,#1E4D9B 0%,#2563EB 100%);}
+.hero-badge{display:inline-block;background:rgba(255,255,255,0.2);color:#fff;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 10px;border-radius:4px;margin-bottom:12px;}
+.hero h1{font-family:'Crimson Pro',serif;font-size:clamp(22px,4vw,34px);font-weight:700;line-height:1.2;margin-bottom:10px;}
+.hero p{font-size:15px;color:rgba(255,255,255,0.82);max-width:580px;}
+.hero-meta{display:flex;flex-wrap:wrap;gap:20px;margin-top:18px;}
+.hero-meta-item{font-size:13px;color:rgba(255,255,255,0.65);}
+.hero-meta-item strong{color:#fff;display:block;font-size:15px;}
+.back-btn{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);color:#fff;text-decoration:none;padding:7px 16px;border-radius:6px;font-size:13px;font-weight:600;margin-top:16px;}
+.back-btn:hover{background:rgba(255,255,255,0.25);}
+.disclaimer{background:#FFF3D6;border:1px solid #F5D580;border-radius:8px;padding:12px 16px;font-size:13px;color:#7a4f00;margin:16px 0;}
+.section-title{font-family:'Crimson Pro',serif;font-size:20px;font-weight:700;color:var(--navy);margin:32px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--border);}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:10px;box-shadow:0 1px 6px rgba(0,0,0,0.07);}
+table{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--white);}
+table thead tr{background:var(--navy);color:#fff;}
+table thead th{padding:11px 14px;text-align:left;font-weight:600;font-size:12.5px;white-space:nowrap;}
+table tbody tr{border-bottom:1px solid var(--border);}
+table tbody tr:last-child{border-bottom:none;}
+table tbody tr:hover{background:#F8FAFF;}
+table tbody td{padding:10px 14px;vertical-align:top;}
+table tbody tr:nth-child(even) td{background:#FAFBFE;}
+.td-good{color:var(--green);font-weight:600;}.td-warn{color:var(--orange);font-weight:600;}
+.td-red{color:#991B1B;font-weight:600;}.td-bold{font-weight:600;}.td-center{text-align:center;}
+.callout{border-radius:8px;padding:14px 18px;margin:14px 0;font-size:14px;border-left:4px solid;}
+.callout-note{background:#EEF3FB;border-color:var(--blue);color:#1e3a6e;}
+.callout-good{background:var(--green-lt);border-color:var(--green);color:var(--green);}
+.callout-warn{background:var(--orange-lt);border-color:var(--orange);color:var(--orange);}
+.callout-info{background:#FFF3D6;border-color:var(--gold);color:#7a4f00;}
+p{margin-bottom:10px;color:var(--text);}
+ul{margin:8px 0 12px 20px;}
+ul li{margin-bottom:6px;font-size:14px;color:var(--text-lt);}
+.footer{margin-top:60px;padding:24px;border-top:1px solid var(--border);text-align:center;font-size:13px;color:var(--gray);}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="topbar-logo" href="index.html">Career<span>Guide</span>.in</a>
+  <a class="topbar-back" href="commerce.html">← Commerce</a>
+  <button class="hamburger" id="hamburger">&#9776;</button>
+</header>
+<div class="overlay" id="overlay"></div>
+<nav class="sidebar" id="sidebar">
+  <div class="sidebar-section"><div class="sidebar-label">← Back</div><a href="index.html">🏠 All Streams</a><a href="commerce.html">📊 Commerce</a></div>
+  <div class="sidebar-section"><div class="sidebar-label">Commerce Exams</div>
+    <a href="cuet.html">CUET — Central Universities <span class="badge badge-comm">1</span></a>
+    <a href="ipmat.html">IPMAT — IIM Integrated MBA <span class="badge badge-comm">2</span></a>
+    <a href="ca-foundation.html">CA Foundation — ICAI <span class="badge badge-comm">3</span></a>
+    <a href="bba.html">BBA Entrances <span class="badge badge-comm">4</span></a>
+    <a href="clat.html">CLAT — Law / NLUs <span class="badge badge-law">5</span></a>
+    <a href="hotel-mgmt.html">Hotel Management <span class="badge badge-comm">6</span></a>
+  </div>
+  <div class="sidebar-section"><div class="sidebar-label">Planning</div>
+    <a href="commerce-careers.html">Career Paths <span class="badge badge-plan">7</span></a>
+    <a href="websites.html">Official Websites</a>
+  </div>
+</nav>
+<main class="main">
+  <div class="hero blue">
+    <div class="hero-badge">Commerce Exam 2 · Management</div>
+    <h1>IPMAT — IIM Integrated MBA</h1>
+    <p>5-year Integrated Programme in Management at IIMs. Direct IIM entry after Class 12. No need to wait for CAT after graduation — you graduate directly with an IIM degree.</p>
+    <div class="hero-meta"><div class="hero-meta-item"><strong>IIM Indore Seats</strong>150 per batch</div><div class="hero-meta-item"><strong>IIM Rohtak Seats</strong>~120 per batch</div><div class="hero-meta-item"><strong>Exam</strong>IPMAT Indore / IPM-AT Rohtak</div><div class="hero-meta-item"><strong>When</strong>May 2026</div></div>
+    <a class="back-btn" href="commerce.html">← Back to Commerce</a>
+  </div>
+  <div class="disclaimer">&#9888; IPMAT cutoff data from IIM Indore and IIM Rohtak official 2025 disclosures. Verify at <strong>iimidr.ac.in</strong> and <strong>iimrohtak.ac.in</strong></div>
+  
+  <h2 class="section-title">What is IPMAT?</h2>
+  <p>IPMAT (Integrated Programme in Management Aptitude Test) is the entrance exam for the 5-year IPM program at IIM Indore and IIM Rohtak. After completing the program, students receive a degree equivalent to an MBA — without needing to give CAT or any other postgraduate entrance exam. It was the first such program in India, introduced by IIM Indore in 2011.</p>
+  <div class="callout callout-good"><strong>Who should consider IPMAT?</strong> Students who are confident about a management career and don't want to spend 3-4 years after graduation preparing for CAT. The 5-year program is intensive but gives a direct route to an IIM degree.</div>
+
+  <h2 class="section-title">Eligibility</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Criteria</th><th>IIM Indore</th><th>IIM Rohtak</th></tr></thead>
+    <tbody>
+      <tr><td class="td-bold">Stream</td><td>All streams (Science, Commerce, Arts)</td><td>All streams</td></tr>
+      <tr><td class="td-bold">Class 12 Marks (Gen/EWS/OBC)</td><td>Minimum 60% in Class 12</td><td>Minimum 60% in Class 12</td></tr>
+      <tr><td class="td-bold">Class 12 Marks (SC/ST/PwD)</td><td>Minimum 55%</td><td>Minimum 55%</td></tr>
+      <tr><td class="td-bold">Age Limit</td><td>Max 20 years (Gen/EWS/OBC) as on July 31 of admission year</td><td>Max 20 years (Gen/EWS/OBC)</td></tr>
+      <tr><td class="td-bold">Attempts</td><td>No limit — can appear multiple times</td><td>No limit</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="section-title">Exam Pattern Comparison</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Feature</th><th>IIM Indore IPMAT</th><th>IIM Rohtak IPM-AT</th></tr></thead>
+    <tbody>
+      <tr><td class="td-bold">Sections</td><td>3: QA-SA + QA-MCQ + VA-MCQ</td><td>3: QA-MCQ + VA-MCQ + LR-MCQ</td></tr>
+      <tr><td class="td-bold">Total Marks</td><td>360 (out of 400 with normalization)</td><td>480</td></tr>
+      <tr><td class="td-bold">Duration</td><td>120 minutes</td><td>120 minutes</td></tr>
+      <tr><td class="td-bold">Negative Marking</td><td>-1 for MCQ wrong. QA-SA has no negative marking.</td><td>-1 for all wrong answers</td></tr>
+      <tr><td class="td-bold">LR Section</td><td>Not present</td><td>Present — needs separate prep</td></tr>
+      <tr><td class="td-bold">Selection Process</td><td>IPMAT score → WAT → PI</td><td>IPM-AT score → WAT → PI</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="section-title">Official Cutoffs — 2025 Cycle</h2>
+  <p>These are the minimum marks to qualify for the PI (Personal Interview) round — not final admission. Final selection includes WAT + PI performance.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Institute</th><th>Category</th><th>Safe Target Score</th><th>2025 Actual Cutoff</th></tr></thead>
+    <tbody>
+      <tr><td class="td-bold">IIM Indore</td><td>General</td><td class="td-warn">240–260 / 360</td><td>QA-SA: 24 | QA-MCQ: 28 | VA: 113</td></tr>
+      <tr><td class="td-bold">IIM Indore</td><td>OBC-NCL</td><td>220–240 / 360</td><td>Lower than General by ~10%</td></tr>
+      <tr><td class="td-bold">IIM Indore</td><td>SC / ST</td><td>180–200 / 360</td><td>Significantly lower — check official data</td></tr>
+      <tr><td class="td-bold">IIM Rohtak</td><td>General</td><td class="td-warn">380+ / 480</td><td>381 / 480 (2025 official)</td></tr>
+      <tr><td class="td-bold">IIM Rohtak</td><td>OBC-NCL</td><td>330–360 / 480</td><td>Lower than General</td></tr>
+    </tbody>
+  </table></div>
+  <div class="callout callout-note"><strong>IIM Rohtak important:</strong> Class 10 marks (10%) and Class 12 marks (20%) contribute to final selection score alongside IPM-AT (45%). Strong academic record can compensate for a borderline aptitude score.</div>
+
+  <h2 class="section-title">Other IIMs Accepting IPMAT Indore Score</h2>
+  <ul>
+    <li><strong>IIM Ranchi</strong> — IPM program, ~120 seats, accepts IPMAT Indore score</li>
+    <li><strong>IIM Amritsar</strong> — IPM program, ~60 seats, accepts IPMAT Indore score</li>
+    <li><strong>IIM Sirmaur</strong> — BMS program, accepts IPMAT Indore score</li>
+    <li><strong>IIM Bodh Gaya &amp; IIM Jammu</strong> — JIPMAT (separate exam, easier than IPMAT Indore)</li>
+  </ul>
+
+  <h2 class="section-title">Program Structure &amp; Fees</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Detail</th><th>IIM Indore</th><th>IIM Rohtak</th></tr></thead>
+    <tbody>
+      <tr><td class="td-bold">Program Duration</td><td>5 years (3yr UG + 2yr MBA)</td><td>5 years (3yr UG + 2yr MBA)</td></tr>
+      <tr><td class="td-bold">Degree Awarded</td><td>IPM degree (equivalent to MBA)</td><td>IPM degree (equivalent to MBA)</td></tr>
+      <tr><td class="td-bold">Total Program Fee</td><td>~₹16–20 Lakh</td><td>~₹12–15 Lakh</td></tr>
+      <tr><td class="td-bold">Exit Option</td><td>Can exit with BBA after 3 years</td><td>Can exit with BBA after 3 years</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 class="section-title">Placement Data (2024-25)</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>IIM</th><th>Average Package</th><th>Highest Package</th><th>Top Recruiters</th></tr></thead>
+    <tbody>
+      <tr><td class="td-bold">IIM Indore (IPM)</td><td class="td-good">₹18–22 LPA</td><td>₹45+ LPA</td><td>McKinsey, BCG, Deloitte, Goldman Sachs, Amazon</td></tr>
+      <tr><td class="td-bold">IIM Rohtak (IPM)</td><td class="td-warn">₹12–16 LPA</td><td>₹30+ LPA</td><td>EY, KPMG, Deloitte, TCS, Infosys</td></tr>
+    </tbody>
+  </table></div>
+  
+  <div class="footer">Compiled for Indian Commerce students · 2026-27 · Data from official sources · Approximate — verify before applying</div>
+</main>
+<script>
+const sidebar=document.getElementById('sidebar');
+const overlay=document.getElementById('overlay');
+document.getElementById('hamburger').addEventListener('click',()=>{sidebar.classList.toggle('open');overlay.classList.toggle('show');});
+overlay.addEventListener('click',()=>{sidebar.classList.remove('open');overlay.classList.remove('show');});
+</script>
+</body>
+</html>
