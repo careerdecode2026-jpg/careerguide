@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Arts & Humanities Stream — Career Guide India 2026-27</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
+:root{--navy:#0F2044;--blue:#1E4D9B;--gold:#D4880A;--green:#166534;--green-lt:#DCFCE7;--orange:#9A3412;--orange-lt:#FFEDD5;--purple:#5B21B6;--purple-lt:#EDE9FE;--teal:#0F766E;--teal-lt:#CCFBF1;--gray:#6B7280;--bg:#F7F8FC;--white:#FFFFFF;--border:#E2E8F0;--text:#1E293B;--text-lt:#475569;--sidebar-w:260px;--header-h:60px;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;}
+.topbar{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--header-h);background:var(--navy);display:flex;align-items:center;gap:16px;padding:0 20px;box-shadow:0 2px 12px rgba(0,0,0,0.25);}
+.topbar-logo{font-family:'Crimson Pro',serif;font-size:20px;font-weight:700;color:#fff;text-decoration:none;}
+.topbar-logo span{color:var(--gold);}
+.topbar-back{font-size:13px;color:rgba(255,255,255,0.6);text-decoration:none;}
+.topbar-back:hover{color:#fff;}
+.hamburger{margin-left:auto;background:none;border:none;cursor:pointer;color:#fff;font-size:22px;padding:4px 8px;}
+@media(min-width:900px){.hamburger{display:none;}}
+.sidebar{position:fixed;top:var(--header-h);left:0;bottom:0;width:var(--sidebar-w);background:var(--white);border-right:1px solid var(--border);overflow-y:auto;z-index:90;transform:translateX(-100%);transition:transform .28s ease;}
+.sidebar.open{transform:translateX(0);}
+@media(min-width:900px){.sidebar{transform:translateX(0);}}
+.sidebar-section{padding:8px 0;border-bottom:1px solid var(--border);}
+.sidebar-label{font-size:10px;font-weight:600;letter-spacing:1.2px;color:var(--gray);text-transform:uppercase;padding:10px 18px 4px;}
+.sidebar a{display:flex;align-items:center;gap:10px;padding:9px 18px;font-size:13.5px;color:var(--text-lt);text-decoration:none;border-left:3px solid transparent;transition:all .18s;}
+.sidebar a:hover{background:var(--bg);color:var(--navy);}
+.sidebar a.active{background:var(--purple-lt);color:var(--purple);border-left-color:var(--purple);font-weight:600;}
+.badge{margin-left:auto;font-size:11px;padding:1px 7px;border-radius:10px;font-weight:600;}
+.badge-arts{background:var(--purple-lt);color:var(--purple);}
+.badge-plan{background:#FFF3D6;color:#7a4f00;}
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:85;}
+.overlay.show{display:block;}
+.main{margin-left:0;margin-top:var(--header-h);padding:32px 20px 60px;}
+@media(min-width:900px){.main{margin-left:var(--sidebar-w);padding:40px 48px 80px;}}
+.hero{background:linear-gradient(135deg,#5B21B6 0%,#7c3aed 100%);color:#fff;border-radius:14px;padding:36px 32px;margin-bottom:36px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,0.06);}
+.hero-badge{display:inline-block;background:rgba(255,255,255,0.2);color:#fff;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 10px;border-radius:4px;margin-bottom:12px;}
+.hero h1{font-family:'Crimson Pro',serif;font-size:clamp(24px,4vw,36px);font-weight:700;line-height:1.2;margin-bottom:10px;}
+.hero p{font-size:15px;color:rgba(255,255,255,0.82);max-width:580px;}
+.back-btn{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);color:#fff;text-decoration:none;padding:7px 16px;border-radius:6px;font-size:13px;font-weight:600;margin-top:18px;}
+.back-btn:hover{background:rgba(255,255,255,0.25);}
+.section-title{font-family:'Crimson Pro',serif;font-size:20px;font-weight:700;color:var(--navy);margin:32px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--border);}
+.exam-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin:16px 0;}
+.exam-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:20px;text-decoration:none;color:var(--text);transition:box-shadow .2s,transform .2s;display:block;position:relative;border-left:4px solid var(--purple);}
+.exam-card:hover{box-shadow:0 4px 16px rgba(0,0,0,0.1);transform:translateY(-2px);}
+.exam-card.navy{border-left-color:var(--navy);}
+.exam-card.teal{border-left-color:var(--teal);}
+.exam-card.plan{border-left-color:var(--gold);}
+.exam-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;}
+.exam-title{font-weight:700;font-size:15px;color:var(--navy);}
+.exam-tag{font-size:11px;font-weight:600;padding:2px 8px;border-radius:4px;}
+.tag-arts{background:var(--purple-lt);color:var(--purple);}
+.tag-teal{background:var(--teal-lt);color:var(--teal);}
+.tag-plan{background:#FFF3D6;color:#7a4f00;}
+.exam-desc{font-size:13px;color:var(--text-lt);margin-bottom:10px;line-height:1.5;}
+.exam-meta{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--gray);}
+.exam-meta span strong{color:var(--text);font-weight:600;}
+.exam-arrow{display:block;text-align:right;color:var(--purple);font-weight:700;margin-top:10px;}
+.callout{border-radius:8px;padding:14px 18px;margin:14px 0;font-size:14px;border-left:4px solid;}
+.callout-good{background:var(--green-lt);border-color:var(--green);color:var(--green);}
+.footer{margin-top:60px;padding:24px;border-top:1px solid var(--border);text-align:center;font-size:13px;color:var(--gray);}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="topbar-logo" href="index.html">Career<span>Guide</span>.in</a>
+  <a class="topbar-back" href="index.html">← All Streams</a>
+  <button class="hamburger" id="hamburger">&#9776;</button>
+</header>
+<div class="overlay" id="overlay"></div>
+<nav class="sidebar" id="sidebar">
+  <div class="sidebar-section"><div class="sidebar-label">← Back</div><a href="index.html">🏠 All Streams</a></div>
+  <div class="sidebar-section"><div class="sidebar-label">Arts Exams</div>
+    <a href="clat.html">CLAT — Law / NLUs <span class="badge badge-arts">1</span></a>
+    <a href="nid-nift.html">NID DAT &amp; NIFT <span class="badge badge-arts">2</span></a>
+    <a href="mass-comm.html">Mass Comm &amp; Other Paths <span class="badge badge-arts">3</span></a>
+  </div>
+  <div class="sidebar-section"><div class="sidebar-label">Planning</div>
+    <a href="arts-careers.html">Career Paths <span class="badge badge-plan">4</span></a>
+    <a href="websites.html">Official Websites</a>
+  </div>
+</nav>
+<main class="main">
+
+  <div class="hero">
+    <div class="hero-badge">Arts &amp; Humanities · 2026-27</div>
+    <h1>Arts &amp; Humanities<br>Career Guide</h1>
+    <p>Complete guide for Arts students — law, design, journalism, civil services, psychology, fine arts and more. Arts has more career diversity than any other stream.</p>
+    <a class="back-btn" href="index.html">← Back to All Streams</a>
+  </div>
+
+  <div class="callout callout-good"><strong>Important note:</strong> CLAT is also in the Commerce section of this website. Arts and Commerce students are both fully eligible for CLAT. The same page applies to both streams.</div>
+
+  <h2 class="section-title">Arts Entrance Exams &amp; Career Paths</h2>
+  <div class="exam-grid">
+
+    <a class="exam-card" href="clat.html">
+      <div class="exam-card-top"><span class="exam-title">CLAT — Law / NLUs</span><span class="exam-tag tag-arts">Law</span></div>
+      <p class="exam-desc">25 National Law Universities via CLAT. 5-year BA LLB. All streams eligible. NLSIU Bangalore closing rank: 112 (Gen, 2026). Top NLUs rival IITs in prestige.</p>
+      <div class="exam-meta"><span><strong>CLAT 2026:</strong> Dec 1, 2025 (completed)</span><span><strong>CLAT 2027:</strong> Dec 2026</span></div>
+      <span class="exam-arrow">View Details →</span>
+    </a>
+
+    <a class="exam-card" href="nid-nift.html">
+      <div class="exam-card-top"><span class="exam-title">NID DAT &amp; NIFT</span><span class="exam-tag tag-arts">Design</span></div>
+      <p class="exam-desc">NID — premier design institute (5 campuses). NIFT — fashion and textile (18 campuses). Both test creative aptitude. All streams eligible. No PCM required.</p>
+      <div class="exam-meta"><span><strong>NID DAT Prelims:</strong> December each year</span><span><strong>NIFT 2026:</strong> Feb 9, 2026</span></div>
+      <span class="exam-arrow">View Details →</span>
+    </a>
+
+    <a class="exam-card navy" href="mass-comm.html">
+      <div class="exam-card-top"><span class="exam-title">Mass Comm, UPSC &amp; Other Paths</span><span class="exam-tag tag-teal">Media &amp; More</span></div>
+      <p class="exam-desc">Journalism (IIMC), Civil Services (UPSC — most prestigious), Psychology, Fine Arts (BFA), Social Work, Teaching. Arts stream has the widest career diversity.</p>
+      <div class="exam-meta"><span><strong>UPSC:</strong> After graduation</span><span><strong>IIMC:</strong> After graduation</span></div>
+      <span class="exam-arrow" style="color:var(--navy)">View Details →</span>
+    </a>
+
+  </div>
+
+  <h2 class="section-title">Planning</h2>
+  <div class="exam-grid">
+    <a class="exam-card plan" href="arts-careers.html">
+      <div class="exam-card-top"><span class="exam-title">Career Path Comparison</span><span class="exam-tag tag-plan">Guide</span></div>
+      <p class="exam-desc">UPSC vs Law vs Design vs Journalism vs Psychology — time, salary and route comparison. Which path suits you best?</p>
+      <span class="exam-arrow" style="color:var(--gold)">View Details →</span>
+    </a>
+    <a class="exam-card plan" href="websites.html">
+      <div class="exam-card-top"><span class="exam-title">Official Websites</span><span class="exam-tag tag-plan">Reference</span></div>
+      <p class="exam-desc">CLAT consortium, NID admissions, NIFT, IIMC, UPSC — all official links in one place.</p>
+      <span class="exam-arrow" style="color:var(--gold)">View Details →</span>
+    </a>
+  </div>
+
+  <div class="footer">Compiled for Indian Arts / Humanities students · 2026-27 · Data from official sources · Approximate — verify before applying</div>
+</main>
+<script>
+const sidebar=document.getElementById('sidebar');
+const overlay=document.getElementById('overlay');
+document.getElementById('hamburger').addEventListener('click',()=>{sidebar.classList.toggle('open');overlay.classList.toggle('show');});
+overlay.addEventListener('click',()=>{sidebar.classList.remove('open');overlay.classList.remove('show');});
+</script>
+</body>
+</html>
