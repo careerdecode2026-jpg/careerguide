@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Common Career Questions Answered — CareerGuide India 2026-27</title>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GYVB4NSK0R"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-GYVB4NSK0R');</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
+:root{--navy:#0F2044;--blue:#1E4D9B;--gold:#D4880A;--green:#166534;--green-lt:#DCFCE7;--orange:#9A3412;--orange-lt:#FFEDD5;--purple:#5B21B6;--purple-lt:#EDE9FE;--teal:#0F766E;--teal-lt:#CCFBF1;--red:#991B1B;--red-lt:#FEE2E2;--gray:#6B7280;--bg:#F7F8FC;--white:#FFFFFF;--border:#E2E8F0;--text:#1E293B;--text-lt:#475569;--header-h:60px;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;}
+.topbar{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--header-h);background:var(--navy);display:flex;align-items:center;gap:16px;padding:0 20px;box-shadow:0 2px 12px rgba(0,0,0,0.25);}
+.topbar-logo{font-family:'Crimson Pro',serif;font-size:20px;font-weight:700;color:#fff;text-decoration:none;}
+.topbar-logo span{color:var(--gold);}
+.topbar-back{font-size:13px;color:rgba(255,255,255,0.6);text-decoration:none;}
+.topbar-back:hover{color:#fff;}
+.main{margin-top:var(--header-h);padding:32px 20px 80px;max-width:860px;margin-left:auto;margin-right:auto;}
+@media(min-width:900px){.main{padding:48px 40px 100px;}}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#0F2044 0%,#1E4D9B 100%);color:#fff;border-radius:14px;padding:36px 32px;margin-bottom:36px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:-40px;right:-40px;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,0.05);}
+.hero-badge{display:inline-block;background:var(--gold);color:var(--navy);font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 10px;border-radius:4px;margin-bottom:12px;}
+.hero h1{font-family:'Crimson Pro',serif;font-size:clamp(24px,4vw,36px);font-weight:700;line-height:1.2;margin-bottom:10px;}
+.hero p{font-size:15px;color:rgba(255,255,255,0.8);max-width:580px;}
+
+/* FILTER TABS */
+.filter-bar{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 24px;}
+.filter-btn{padding:8px 18px;border-radius:20px;border:2px solid var(--border);background:var(--white);color:var(--text-lt);font-size:13.5px;font-weight:600;cursor:pointer;transition:all .18s;}
+.filter-btn:hover{border-color:var(--blue);color:var(--blue);}
+.filter-btn.active{background:var(--navy);color:#fff;border-color:var(--navy);}
+
+/* FAQ ITEMS */
+.faq-section{margin-bottom:16px;}
+.faq-item{background:var(--white);border:1px solid var(--border);border-radius:12px;margin-bottom:12px;overflow:hidden;transition:box-shadow .2s;}
+.faq-item:hover{box-shadow:0 4px 16px rgba(0,0,0,0.08);}
+.faq-item.hidden{display:none;}
+
+.faq-q{display:flex;align-items:flex-start;justify-content:space-between;padding:18px 20px;cursor:pointer;gap:12px;}
+.faq-q-text{font-weight:600;font-size:15px;color:var(--navy);line-height:1.4;}
+.faq-q-tag{font-size:11px;font-weight:700;padding:3px 10px;border-radius:12px;white-space:nowrap;flex-shrink:0;}
+.tag-eng{background:#DBEAFE;color:#1E40AF;}
+.tag-med{background:var(--green-lt);color:var(--green);}
+.tag-comm{background:var(--orange-lt);color:var(--orange);}
+.tag-arts{background:var(--purple-lt);color:var(--purple);}
+.tag-gen{background:#F3F4F6;color:var(--gray);}
+
+.faq-arrow{font-size:18px;color:var(--gray);flex-shrink:0;transition:transform .2s;margin-top:2px;}
+.faq-item.open .faq-arrow{transform:rotate(180deg);}
+
+.faq-a{display:none;padding:0 20px 20px;border-top:1px solid var(--border);margin-top:0;}
+.faq-item.open .faq-a{display:block;}
+.faq-a p{color:var(--text-lt);font-size:14px;margin:14px 0 10px;line-height:1.7;}
+.faq-a ul{margin:8px 0 12px 18px;}
+.faq-a ul li{color:var(--text-lt);font-size:14px;margin-bottom:6px;}
+.faq-a ul li strong{color:var(--text);}
+
+/* LINKS IN FAQ */
+.faq-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+.faq-link{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:6px;font-size:13px;font-weight:600;text-decoration:none;transition:opacity .18s;}
+.faq-link:hover{opacity:0.85;}
+.faq-link.eng{background:#DBEAFE;color:#1E40AF;}
+.faq-link.med{background:var(--green-lt);color:var(--green);}
+.faq-link.comm{background:var(--orange-lt);color:var(--orange);}
+.faq-link.arts{background:var(--purple-lt);color:var(--purple);}
+.faq-link.teal{background:var(--teal-lt);color:var(--teal);}
+.faq-link.gold{background:#FFF3D6;color:#7a4f00;}
+
+/* SECTION TITLE */
+.section-title{font-family:'Crimson Pro',serif;font-size:20px;font-weight:700;color:var(--navy);margin:32px 0 16px;padding-bottom:8px;border-bottom:2px solid var(--border);}
+
+.footer{margin-top:60px;padding:24px;border-top:1px solid var(--border);text-align:center;font-size:13px;color:var(--gray);}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="topbar-logo" href="index.html">Career<span>Guide</span>.in</a>
+  <a class="topbar-back" href="index.html">← All Streams</a>
+</header>
+
+<main class="main">
+
+  <div class="hero">
+    <div class="hero-badge">Career Q&amp;A · All Streams · 2026-27</div>
+    <h1>Common Career Questions<br>— Answered</h1>
+    <p>Real questions students and parents ask. Honest answers with links to detailed guidance. Filter by stream or browse all.</p>
+  </div>
+
+  <!-- FILTER -->
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filterFAQ('all')">All Questions</button>
+    <button class="filter-btn" onclick="filterFAQ('eng')">📐 Engineering</button>
+    <button class="filter-btn" onclick="filterFAQ('med')">🧬 Medical / Biology</button>
+    <button class="filter-btn" onclick="filterFAQ('comm')">📊 Commerce</button>
+    <button class="filter-btn" onclick="filterFAQ('arts')">🎨 Arts</button>
+    <button class="filter-btn" onclick="filterFAQ('gen')">🎯 General</button>
+  </div>
+
+  <!-- ── ENGINEERING ─────────────────────────────── -->
+  <h2 class="section-title">📐 Engineering Questions</h2>
+
+  <div class="faq-item" data-cat="eng">
+    <div class="faq-q" onclick="toggleFAQ(this)">
+      <span class="faq-q-text">My JEE Main rank is 50,000. Which colleges can I realistically get?</span>
+      <span class="faq-q-tag tag-eng">Engineering</span>
+      <span class="faq-arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      <p>A rank of 50,000 in JEE Main (General category) is a decent score. Here's a realistic picture:</p>
+      <ul>
+        <li><strong>NITs:</strong> You are unlikely to get top NITs (Trichy, Warangal) in CSE at All India Quota. However, mid-tier NITs in non-CSE branches (ECE, Mechanical, Civil) are possible.</li>
+        <li><strong>Home State Quota:</strong> If your home state NIT has HS quota, your effective rank can extend to 70,000–80,000. Check your state NIT specifically.</li>
+        <li><strong>IIITs:</strong> Several IIITs have closing ranks around 40,000–60,000 — worth exploring.</li>
+        <li><strong>GFTIs:</strong> Government Funded Technical Institutes via JoSAA — good value with lower cutoffs.</li>
+        <li><strong>Private colleges:</strong> VITEEE, SRMJEEE, MET — appear for these as backup.</li>
+      </ul>
+      <div class="faq-links">
+        <a class="faq-link eng" href="jee-main.html">JEE Main Cutoffs →</a>
+        <a class="faq-link eng" href="josaa.html">JoSAA Counselling Guide →</a>
+        <a class="faq-link eng" href="private.html">Private College Options →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item" data-cat="eng">
+    <div class="faq-q" onclick="toggleFAQ(this)">
+      <span class="faq-q-text">Should I wait for JEE Advanced result or accept NIT seat immediately?</span>
+      <span class="faq-q-tag tag-eng">Engineering</span>
+      <span class="faq-arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      <p>You do NOT need to choose immediately. Here is the correct sequence:</p>
+      <ul>
+        <li>JoSAA counselling runs 6 rounds — you can participate in all rounds simultaneously while JEE Advanced result is awaited.</li>
+        <li>JEE Advanced result comes June 1, 2026. JoSAA starts June 2-3, 2026.</li>
+        <li>In JoSAA Round 1, select your NIT preference. Keep the seat on "Float" — this means you keep improving your allotment while holding current seat.</li>
+        <li>If JEE Advanced gives you a better IIT option, you can upgrade within JoSAA rounds.</li>
+        <li><strong>Never withdraw from JoSAA without a confirmed IIT seat.</strong></li>
+      </ul>
+      <div class="faq-links">
+        <a class="faq-link eng" href="jee-advanced.html">JEE Advanced Decision Guide →</a>
+        <a class="faq-link eng" href="josaa.html">JoSAA Counselling Process →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item" data-cat="eng">
+    <div class="faq-q" onclick="toggleFAQ(this)">
+      <span class="faq-q-text">BITS Pilani vs NIT Trichy — which is better for CSE?</span>
+      <span class="faq-q-tag tag-eng">Engineering</span>
+      <span class="faq-arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      <p>Both are excellent but differ in important ways:</p>
+      <ul>
+        <li><strong>BITS Pilani CSE:</strong> More expensive (₹24–30L total), no reservation, dual degree flexibility, strong industry culture, better for entrepreneurship and startups. BITSAT score 304+ needed.</li>
+        <li><strong>NIT Trichy CSE:</strong> Much cheaper (₹10–11L total), government institution, reservation benefits available, strong core engineering culture. JEE rank under 6,500 (Gen) needed.</li>
+        <li><strong>Placements:</strong> Comparable — both get Google, Microsoft, Amazon. NIT Trichy avg ₹18–22 LPA, BITS Pilani avg ₹20–30 LPA.</li>
+        <li><strong>Verdict:</strong> If budget is a concern — NIT Trichy. If flexibility and campus life matter more — BITS Pilani.</li>
+      </ul>
+      <div class="faq-links">
+        <a class="faq-link eng" href="bitsat.html">BITSAT Details →</a>
+        <a class="faq-link eng" href="jee-main.html">NIT Cutoffs →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item" data-cat="eng">
+    <div class="faq-q" onclick="toggleFAQ(this)">
+      <span class="faq-q-text">Is a drop year worth it for JEE?</span>
+      <span class="faq-q-tag tag-eng">Engineering</span>
+      <span class="faq-arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      <p>A drop year can be worth it under specific conditions — not for everyone:</p>
+      <ul>
+        <li><strong>Worth it if:</strong> You scored above 90 percentile in JEE Main but missed your target by a small margin. You have a clear study plan and family support.</li>
+        <li><strong>Not worth it if:</strong> You scored below 80 percentile — the gap is too large to close in one year without exceptional discipline. Consider good private colleges instead.</li>
+        <li><strong>Key reality:</strong> Only ~30% of drop year students improve significantly. The rest either stay the same or decline due to pressure and isolation.</li>
+        <li><strong>Alternative:</strong> Join a good NIT or BITS with a lower branch → work hard → branch change in Year 2 (most NITs allow this for top performers).</li>
+      </ul>
+      <div class="faq-links">
+        <a class="faq-link eng" href="decision.html">Decision Matrix →</a>
+        <a class="faq-link eng" href="private.html">Good Private College Options →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item" data-cat="eng">
+    <div class="faq-q" onclick="toggleFAQ(this)">
+      <span class="faq-q-text">I am interested in Design — can a PCM student apply for UCEED?</span>
+      <span class="faq-q-tag tag-eng">Engineering</span>
+      <span class="faq-arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      <p>Yes — absolutely! PCM students are fully eligible for UCEED and it is a great alternative path.</p>
+      <ul>
+        <li>UCEED (IIT Design) — any stream eligible. PCM students actually have an advantage in the analytical sections.</li>
+        <li>IIT Guwahati and IIT Roorkee B.Des programs specifically require Science stream (PCM) — so PCM students have exclusive access to these.</li>
+        <li>UCEED tests visualization, design aptitude and creativity — not PCM knowledge. Start sketching practice early.</li>
+        <li>Only ~225 seats across all IITs. Very competitive but excellent career.</li>
+      </ul>
+      <div class="faq-links">
+        <a class="faq-link arts" href="uceed.html">UCEED — Full Details →</a>
+        <a class="faq-link arts" href="nid-nift.html">NID &amp; NIFT Design →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── MEDICAL ──────────────────────────────────── -->
+  <h2 class="section-title">🧬 Medical / Biology Questions</h2>
+
+  <div class="faq-item" data-cat="med">
+    <div class="faq-q" onclick="toggleFAQ(this)">
+      <span class="faq-q-text">I scored below 400 in NEET 2026. What are my options?</span>
+      <span class="faq-q-tag tag-med">Medical</span>
+      <span class="faq-arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      <p>Below 400 in NEET does not mean your career in healthcare is over. Here are genuine, respected options:</p>
+      <ul>
+        <li><strong>BAMS (Ayurvedic Doctor):</strong> Score of 300–400 can get you government BAMS colleges. BAMS doctors can practice, prescribe, and run clinics legally. Highly respected career.</li>
+        <li><strong>BHMS / BUMS:</strong> Similar to BAMS — Homeopathy and Unani medicine. Lower cutoffs, similar career.</li>
+        <li><strong>B.Sc Nursing:</strong> Does NOT require NEET at most colleges. Huge international demand — UK, Canada, Australia, Gulf. Can earn ₹4–10 Lakh/month abroad.</li>
+        <li><strong>B.Pharm:</strong> Does not require NEET. 4-year pharmacy degree. Excellent career in pharmaceutical industry at companies like Sun Pharma, Cipla, Dr. Reddy's.</li>
+        <li><strong>Drop year:</strong> If MBBS is your absolute goal, consider repeating NEET — but with a realistic improvement plan. 22 lakh students appear; only 1.18 lakh govt MBBS seats exist.</li>
+      </ul>
+      <div class="faq-links">
+        <a class="faq-link med" href="allied-health.html">BAMS / Nursing / BPharm Details →</a>
+        <a class="faq-link med" href="bio-careers.html">All Biology Career Paths →</a>
+        <a class="faq-link med" href="neet.html">NEET Cutoffs &amp; Seats →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item" data-cat="med">
+    <div class="faq-q" onclick="toggleFAQ(this)">
+      <span class="faq-q-text">What NEET score do I need for AIIMS Delhi?</span>
+      <span class="faq-q-tag tag-med">Medical</span>
+      <span class="faq-arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      <p>AIIMS Delhi is the most competitive medical college in India. Based on 2025 official MCC data:</p>
+      <ul>
+        <li><strong>General category:</strong> NEET rank within top 47–48 — equivalent to 680+ marks out of 720.</li>
+        <li><strong>OBC-NCL:</strong> Rank within top 200–400 approximately.</li>
+        <li><strong>SC:</strong> Rank within top 1,500–3,000 approximately.</li>
+        <li><strong>ST:</strong> Rank within top 500–800 approximately.</li>
+        <li>AIIMS Delhi has only 132 MBBS seats total. It is genuinely one of the hardest seats to get in India.</li>
+        <li><strong>Good news:</strong> There are 19 other AIIMS campuses with lower cutoffs — Bhopal, Rishikesh, Jodhpur etc. A score of 600–650 can get you a good AIIMS.</li>
+      </ul>
+      <div class="faq-links">
+        <a class="faq-link med" href="aiims-colleges.html">All AIIMS Cutoffs &amp; Fees →</a>
+        <a class="faq-link med" href="neet.html">NEET Score Guide →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item" data-cat="med">
+    <div class="faq-q" onclick="toggleFAQ(this)">
+      <span class="faq-q-text">Is Nursing a good career? Can I go abroad after B.Sc Nursing?</span>
+      <span class="faq-q-tag tag-med">Medical</span>
+      <span class="faq-arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      <p>Nursing is one of the most underrated career choices in India — and one of the best internationally:</p>
+      <ul>
+        <li><strong>India salary:</strong> ₹20,000–40,000/month starting. Government hospital nurses earn more with time.</li>
+        <li><strong>International demand:</strong> UK, Canada, Australia, USA, Gulf countries actively recruit Indian nurses. After clearing NCLEX (USA) or NMC (UK) exams, salary is ₹4–10 Lakh/month equivalent.</li>
+        <li><strong>NEET not required:</strong> Most B.Sc Nursing colleges admit based on Class 12 marks (PCB, 45–50% minimum).</li>
+        <li><strong>AIIMS B.Sc Nursing:</strong> Has its own entrance exam — very prestigious.</li>
+        <li><strong>Timeline:</strong> B.Sc Nursing (4yr) → Work 1-2 years in India → Clear international licensing exam → Move abroad.</li>
+      </ul>
+      <div class="faq-links">
+        <a class="faq-link med" href="allied-health.html">Nursing Career — Full Details →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item" data-cat="med">
+    <div class="faq-q" onclick="toggleFAQ(this)">
+      <span class="faq-q-text">BAMS vs MBBS — which should I choose if I get both?</span>
+      <span class="faq-q-tag tag-med">Medical</span>
+      <span class="faq-arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      <p>If you genuinely get an MBBS government seat — always choose MBBS. But if the comparison is BAMS government vs MBBS private — read carefully:</p>
+      <ul>
+        <li><strong>MBBS Government:</strong> Always preferred. Best investment in India. Fees ₹35,000 – 6 Lakh total, globally recognized degree.</li>
+        <li><strong>MBBS Private (Management quota):</strong> Costs ₹60 Lakh – 2 Crore. Only choose if family can genuinely afford without loans, or if the private college has excellent infrastructure and hospital.</li>
+        <li><strong>BAMS Government:</strong> Excellent choice at ₹55,000 – 3 Lakh total fees. BAMS doctors earn well in wellness industry and government AYUSH posts. Respected career.</li>
+        <li><strong>Verdict:</strong> BAMS Govt &gt; MBBS Private (expensive management quota) for most students.</li>
+      </ul>
+      <div class="faq-links">
+        <a class="faq-link med" href="allied-health.html">BAMS Details →</a>
+        <a class="faq-link med" href="neet.html">MBBS Fees Comparison →</a>
+        <a class="faq-link med" href="bio-careers.html">Career Path Comparison →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── COMMERCE ─────────────────────────────────── -->
+  <h2 class="section-title">📊 Commerce Questions</h2>
+
+  <div class="faq-item" data-cat="comm">
+    <div class="faq-q" onclick="toggleFAQ(this)">
+      <span class="faq-q-text">Can I get into IIM directly after Class 12 without giving CAT?</span>
+      <span class="faq-q-tag tag-comm">Commerce</span>
+      <span class="faq-arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      <p>Yes — this is possible through IPMAT (Integrated Programme in Management Aptitude Test):</p>
+      <ul>
+        <li>IIM Indore and IIM Rohtak offer a 5-year Integrated MBA program directly after Class 12.</li>
+        <li>All streams eligible — Science, Commerce, Arts.</li>
+        <li>You get an IIM degree without ever giving CAT.</li>
+        <li>IIM Indore IPMAT cutoff: approximately 240–260 out of 360 for General category (2025).</li>
+        <li>Other IIMs accepting IPMAT score: IIM Ranchi, IIM Amritsar, IIM Sirmaur.</li>
+        <li>IIM Jammu and IIM Bodh Gaya: JIPMAT — separate easier exam.</li>
+      </ul>
+      <div class="faq-links">
+        <a class="faq-link comm" href="ipmat.html">IPMAT — Full Details →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item" data-cat="comm">
+    <div class="faq-q" onclick="toggleFAQ(this)">
+      <span class="faq-q-text">CA vs MBA — which is better for Commerce students?</span>
+      <span class="faq-q-tag tag-comm">Commerce</span>
+      <span class="faq-arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      <p>Both are excellent — the choice depends on your personality and goals:</p>
+      <ul>
+        <li><strong>CA:</strong> Better if you love accounting, finance, tax, auditing. Takes 4.5–6 years. Pass rate per attempt is 20–35% — requires patience. Starting salary ₹7–10 LPA, growing to ₹25–80 LPA. Own practice is unlimited.</li>
+        <li><strong>MBA (IIM):</strong> Better if you love management, strategy, marketing, consulting. Takes 5 years via IPMAT or 3+2 via graduation+CAT. Starting salary at top IIMs ₹18–25 LPA.</li>
+        <li><strong>Both together:</strong> Many students do CA + MBA — powerful combination for CFO/Finance leadership roles.</li>
+        <li><strong>Simple rule:</strong> If you love numbers and detailed analysis → CA. If you love people, strategy and business → MBA.</li>
+      </ul>
+      <div class="faq-links">
+        <a class="faq-link teal" href="ca-foundation.html">CA Foundation Details →</a>
+        <a class="faq-link comm" href="ipmat.html">IIM via IPMAT →</a>
+        <a class="faq-link comm" href="commerce-careers.html">Full Career Comparison →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item" data-cat="comm">
+    <div class="faq-q" onclick="toggleFAQ(this)">
+      <span class="faq-q-text">Which is the best BBA college in India and how to get admission?</span>
+      <span class="faq-q-tag tag-comm">Commerce</span>
+      <span class="faq-arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      <p>Top BBA colleges and their admission routes:</p>
+      <ul>
+        <li><strong>SSCBS Delhi (DU):</strong> Best govt BBA college — via DU JAT exam. Very affordable fees (₹20,000–40,000/year). Highly competitive.</li>
+        <li><strong>SCMS Pune (Symbiosis):</strong> Best private BBA — via SET exam + PI. Fee ₹4–6 Lakh/year.</li>
+        <li><strong>NMIMS Mumbai:</strong> Via NPAT exam. Strong finance focus. Fee ₹3–5 Lakh/year.</li>
+        <li><strong>Christ University Bengaluru:</strong> Own entrance + PI. Good for South India. Fee ₹1.5–2.5 Lakh/year.</li>
+        <li><strong>IP University Delhi:</strong> Via IPU CET. Affordable. Good for Delhi students.</li>
+        <li>All streams eligible for BBA. No CUET needed for most BBA programs.</li>
+      </ul>
+      <div class="faq-links">
+        <a class="faq-link comm" href="bba.html">BBA Entrances — Full Details →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item" data-cat="comm">
+    <div class="faq-q" onclick="toggleFAQ(this)">
+      <span class="faq-q-text">Is CLAT only for Arts students or can Commerce students also apply?</span>
+      <span class="faq-q-tag tag-comm">Commerce</span>
+      <span class="faq-arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      <p>CLAT is open to ALL streams — Science, Commerce, and Arts. There is no stream restriction whatsoever.</p>
+      <ul>
+        <li>Eligibility: Class 12 passed from any recognized board with minimum 45% (Gen/OBC) or 40% (SC/ST).</li>
+        <li>Commerce students often do very well in CLAT because of their GK, English and logical reasoning background.</li>
+        <li>Top NLUs (NLSIU Bangalore, NALSAR Hyderabad, NUJS Kolkata) place students in corporate law firms at ₹12–20 LPA starting salary.</li>
+        <li>Law + Commerce background is highly valued in corporate legal roles.</li>
+      </ul>
+      <div class="faq-links">
+        <a class="faq-link arts" href="clat.html">CLAT — NLU Cutoffs &amp; Details →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ARTS ──────────────────────────────────────── -->
+  <h2 class="section-title">🎨 Arts / Humanities Questions</h2>
+
+  <div class="faq-item" data-cat="arts">
+    <div class="faq-q" onclick="toggleFAQ(this)">
+      <span class="faq-q-text">Can Arts students become lawyers? Is CLAT open to them?</span>
+      <span class="faq-q-tag tag-arts">Arts</span>
+      <span class="faq-arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      <p>Yes — completely! In fact, Arts/Humanities students are among the strongest CLAT performers historically.</p>
+      <ul>
+        <li>History, Political Science, and English background gives Arts students an advantage in Legal Reasoning, GK, and English sections of CLAT.</li>
+        <li>25 National Law Universities admit via CLAT — no stream restriction.</li>
+        <li>Top NLU: NLSIU Bangalore (closing rank 112 Gen, 2025), NALSAR Hyderabad, NUJS Kolkata.</li>
+        <li>5-year BA LLB program. Fees: ₹8–14 Lakh total (very affordable for premier institution).</li>
+        <li>NLU Delhi: Separate AILET exam — apply separately.</li>
+      </ul>
+      <div class="faq-links">
+        <a class="faq-link arts" href="clat.html">CLAT — Full Details &amp; NLU Cutoffs →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item" data-cat="arts">
+    <div class="faq-q" onclick="toggleFAQ(this)">
+      <span class="faq-q-text">How to become an IAS officer? Which stream is best for UPSC?</span>
+      <span class="faq-q-tag tag-arts">Arts</span>
+      <span class="faq-arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      <p>UPSC Civil Services (IAS/IPS/IFS) is open to graduates of any stream. No stream is compulsory:</p>
+      <ul>
+        <li><strong>Best UG for UPSC:</strong> BA History / Political Science / Geography / Public Administration / Sociology. These subjects align with UPSC Mains optional papers.</li>
+        <li><strong>Route:</strong> Class 12 (any stream) → Any graduation (3yr) → UPSC preparation (1–3yr) → Prelims → Mains → Interview.</li>
+        <li><strong>Age limit:</strong> 21–32 years (Gen). 6 attempts for General, 9 for OBC, unlimited for SC/ST within age limit.</li>
+        <li><strong>Salary:</strong> IAS starting ₹56,100/month + HRA + DA. District Collector level with perks equivalent to ₹1.5–2 Lakh/month. Lifetime pension.</li>
+        <li><strong>Reality:</strong> Highly competitive — ~10 lakh appear, ~1,000 selected. Requires 2–3 years dedicated preparation typically.</li>
+      </ul>
+      <div class="faq-links">
+        <a class="faq-link arts" href="mass-comm.html">UPSC &amp; Arts Career Paths →</a>
+        <a class="faq-link arts" href="arts-careers.html">Arts Career Comparison →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item" data-cat="arts">
+    <div class="faq-q" onclick="toggleFAQ(this)">
+      <span class="faq-q-text">Is NID or NIFT better for a Design career?</span>
+      <span class="faq-q-tag tag-arts">Arts</span>
+      <span class="faq-arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      <p>Both are excellent — but they serve different design interests:</p>
+      <ul>
+        <li><strong>NID (National Institute of Design):</strong> Better for industrial/product design, graphic design, animation, furniture design. More prestigious overall. 5 campuses. NID Ahmedabad is the flagship — globally ranked.</li>
+        <li><strong>NIFT (National Institute of Fashion Technology):</strong> Better for fashion, textiles, apparel, knitwear, fashion communication and fashion management. 18 campuses across India.</li>
+        <li><strong>Simple rule:</strong> Interested in fashion industry specifically → NIFT. Interested in broader design (products, UI/UX, animation, graphics) → NID.</li>
+        <li><strong>Difficulty:</strong> NID is harder to crack (only ~400 seats, very creative exam). NIFT is more accessible (18 campuses, more seats).</li>
+      </ul>
+      <div class="faq-links">
+        <a class="faq-link arts" href="nid-nift.html">NID &amp; NIFT — Full Details →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── GENERAL ─────────────────────────────────── -->
+  <h2 class="section-title">🎯 General Questions</h2>
+
+  <div class="faq-item" data-cat="gen">
+    <div class="faq-q" onclick="toggleFAQ(this)">
+      <span class="faq-q-text">Which stream should I choose after Class 10 — Science, Commerce or Arts?</span>
+      <span class="faq-q-tag tag-gen">General</span>
+      <span class="faq-arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      <p>The most important decision of Class 10 — but it's not as permanent as people think. Here's honest guidance:</p>
+      <ul>
+        <li><strong>Choose Science (PCM):</strong> If you enjoy Mathematics and Physics, want engineering, design, defence or pure science careers. Opens the most doors including Commerce-level options (Economics, Law, Design).</li>
+        <li><strong>Choose Science (PCB):</strong> If you want to become a doctor, nurse, pharmacist or work in biological sciences. NEET is mandatory for medicine.</li>
+        <li><strong>Choose Commerce:</strong> If you enjoy business, finance, accounting or management. Best for CA, MBA, BBA, banking careers.</li>
+        <li><strong>Choose Arts:</strong> If you enjoy humanities, writing, law, civil services, design or psychology. Often underrated — Arts has the highest career diversity.</li>
+        <li><strong>Key truth:</strong> Your interest and natural strength matters more than any stream's "prestige." A passionate Arts student will outperform a reluctant Science student every time.</li>
+      </ul>
+      <div class="faq-links">
+        <a class="faq-link eng" href="maths.html">Mathematics Stream →</a>
+        <a class="faq-link med" href="bio.html">Biology Stream →</a>
+        <a class="faq-link comm" href="commerce.html">Commerce Stream →</a>
+        <a class="faq-link arts" href="arts.html">Arts Stream →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item" data-cat="gen">
+    <div class="faq-q" onclick="toggleFAQ(this)">
+      <span class="faq-q-text">What is JoSAA counselling and how does it work?</span>
+      <span class="faq-q-tag tag-gen">General</span>
+      <span class="faq-arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      <p>JoSAA (Joint Seat Allocation Authority) is the centralised admission process for all IITs, NITs, IIITs and GFTIs in India:</p>
+      <ul>
+        <li>After JEE results → Register on josaa.nic.in → Fill college and branch preferences → Seats allotted based on rank.</li>
+        <li>JoSAA 2026 registration starts: <strong>June 2-3, 2026</strong> (right after JEE Advanced result on June 1).</li>
+        <li>6 rounds of seat allotment. Each round you can upgrade, freeze or slide your seat.</li>
+        <li>"Float" = Keep current seat but try for better in next round. "Freeze" = Lock current seat permanently. "Slide" = Upgrade branch within same institute.</li>
+        <li><strong>Never miss JoSAA deadlines</strong> — missed deadline = seat cancelled permanently.</li>
+      </ul>
+      <div class="faq-links">
+        <a class="faq-link eng" href="josaa.html">JoSAA Counselling — Full Guide →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item" data-cat="gen">
+    <div class="faq-q" onclick="toggleFAQ(this)">
+      <span class="faq-q-text">Are there any good government college options with low fees for all streams?</span>
+      <span class="faq-q-tag tag-gen">General</span>
+      <span class="faq-arrow">▼</span>
+    </div>
+    <div class="faq-a">
+      <p>Yes — India has excellent low-cost government institutions across all streams:</p>
+      <ul>
+        <li><strong>Engineering:</strong> NITs (₹10–12L total), IITs (₹14–17L total), State govt colleges via KCET/MHT-CET (₹3–8L total).</li>
+        <li><strong>Medical:</strong> AIIMS Delhi (₹5,856 total!), JIPMER (₹1–1.5L total), State govt medical colleges (₹35,000–6L total).</li>
+        <li><strong>Law:</strong> National Law Universities via CLAT (₹8–14L for 5 years) — genuinely affordable for top legal education.</li>
+        <li><strong>Design:</strong> NID campuses (₹1–7.3L/year), IIT B.Des via UCEED (₹1.5–2L/year).</li>
+        <li><strong>Hotel Management:</strong> IHMs via NCHMCT JEE (₹3L total for 3 years) — outstanding value.</li>
+        <li><strong>Arts/Science:</strong> DU, JNU, BHU, Hyderabad University via CUET — world-class education at ₹5,000–20,000/year tuition.</li>
+      </ul>
+      <div class="faq-links">
+        <a class="faq-link eng" href="maths.html">Engineering Options →</a>
+        <a class="faq-link med" href="neet.html">Medical Options →</a>
+        <a class="faq-link comm" href="commerce.html">Commerce Options →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Compiled for Indian students · 2026-27 · Data from official sources · Approximate — verify at official websites before applying · <a href="index.html" style="color:var(--blue)">Back to Home</a>
+  </div>
+
+</main>
+
+<script>
+// GA
+window.dataLayer=window.dataLayer||[];
+
+// Toggle FAQ
+function toggleFAQ(el) {
+  const item = el.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  // Close all
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  // Open clicked if it was closed
+  if (!isOpen) item.classList.add('open');
+}
+
+// Filter
+function filterFAQ(cat) {
+  // Update buttons
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+
+  // Show/hide items
+  document.querySelectorAll('.faq-item').forEach(item => {
+    if (cat === 'all' || item.dataset.cat === cat) {
+      item.classList.remove('hidden');
+    } else {
+      item.classList.add('hidden');
+      item.classList.remove('open');
+    }
+  });
+
+  // Show/hide section titles
+  document.querySelectorAll('.section-title').forEach(title => {
+    title.style.display = cat === 'all' ? 'block' : 'none';
+  });
+}
+</script>
+</body>
+</html>
