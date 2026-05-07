@@ -1,73 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GYVB4NSK0R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-GYVB4NSK0R');
-</script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Career Guide India 2026-27 — Choose Your Stream</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GYVB4NSK0R"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-GYVB4NSK0R");</script>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
-
-:root {
-  --navy:#0F2044;--blue:#1E4D9B;--gold:#D4880A;--green:#166534;
-  --gray:#6B7280;--bg:#F7F8FC;--white:#FFFFFF;--border:#E2E8F0;
-  --text:#1E293B;--text-lt:#475569;--header-h:64px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap");
+:root{--navy:#0F2044;--blue:#1E4D9B;--gold:#D4880A;--green:#166534;--gray:#6B7280;--bg:#F7F8FC;--white:#FFFFFF;--border:#E2E8F0;--text:#1E293B;--text-lt:#475569;--header-h:60px;}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
-body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;min-height:100vh;}
+body{font-family:"DM Sans",sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;min-height:100vh;}
 
+/* TOPBAR */
 .topbar{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--header-h);background:var(--navy);display:flex;align-items:center;padding:0 28px;box-shadow:0 2px 16px rgba(0,0,0,0.3);}
-.topbar-logo{font-family:'Crimson Pro',serif;font-size:22px;font-weight:700;color:#fff;text-decoration:none;}
+.topbar-logo{font-family:"Crimson Pro",serif;font-size:22px;font-weight:700;color:#fff;text-decoration:none;}
 .topbar-logo span{color:var(--gold);}
 .topbar-tag{margin-left:16px;font-size:12px;color:rgba(255,255,255,0.5);border-left:1px solid rgba(255,255,255,0.2);padding-left:14px;display:none;}
 @media(min-width:500px){.topbar-tag{display:block;}}
 
-.page{padding-top:var(--header-h);min-height:100vh;display:flex;flex-direction:column;}
+/* TICKER */
+.ticker-wrap{position:fixed;top:var(--header-h);left:0;right:0;z-index:99;background:#B91C1C;color:#fff;overflow:hidden;height:36px;display:flex;align-items:center;}
+.ticker-label{background:#7F1D1D;padding:0 14px;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;height:100%;display:flex;align-items:center;white-space:nowrap;flex-shrink:0;}
+.ticker-track{display:flex;animation:ticker 30s linear infinite;white-space:nowrap;}
+.ticker-track:hover{animation-play-state:paused;}
+.ticker-item{padding:0 36px;font-size:12.5px;font-weight:500;}
+.ticker-item a{color:#FCD34D;font-weight:700;text-decoration:none;}
+.ticker-dot{color:#FCA5A5;padding:0 8px;}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-.hero{background:linear-gradient(140deg,#0F2044 0%,#1a3a6e 60%,#1e4d9b 100%);color:#fff;text-align:center;padding:56px 24px 48px;position:relative;overflow:hidden;}
-.hero::before{content:'';position:absolute;top:-60px;right:-60px;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,0.03);}
+/* PAGE */
+.page{padding-top:calc(var(--header-h) + 36px);min-height:100vh;display:flex;flex-direction:column;}
+
+/* HERO */
+.hero{background:linear-gradient(140deg,#0F2044 0%,#1a3a6e 60%,#1e4d9b 100%);color:#fff;text-align:center;padding:48px 24px 40px;position:relative;overflow:hidden;}
+.hero::before{content:"";position:absolute;top:-60px;right:-60px;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,0.03);}
 .hero-label{display:inline-block;background:var(--gold);color:var(--navy);font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;padding:4px 12px;border-radius:4px;margin-bottom:18px;}
-.hero h1{font-family:'Crimson Pro',serif;font-size:clamp(26px,5vw,46px);font-weight:700;line-height:1.15;margin-bottom:14px;}
+.hero h1{font-family:"Crimson Pro",serif;font-size:clamp(26px,5vw,46px);font-weight:700;line-height:1.15;margin-bottom:14px;}
 .hero p{font-size:16px;color:rgba(255,255,255,0.72);max-width:540px;margin:0 auto;}
 .hero-disclaimer{display:inline-block;margin-top:22px;background:rgba(212,136,10,0.15);border:1px solid rgba(212,136,10,0.4);border-radius:6px;padding:8px 18px;font-size:12.5px;color:#fcd975;max-width:620px;}
 
-.stream-section{padding:48px 24px 20px;max-width:1060px;margin:0 auto;width:100%;}
-.stream-heading{font-family:'Crimson Pro',serif;font-size:26px;font-weight:700;color:var(--navy);text-align:center;margin-bottom:8px;}
-.stream-sub{text-align:center;color:var(--text-lt);font-size:14.5px;margin-bottom:36px;}
-
-.stream-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;margin-bottom:48px;}
-
-.stream-card{border-radius:16px;padding:28px 24px 56px;text-decoration:none;color:#fff;position:relative;overflow:hidden;transition:transform .22s ease,box-shadow .22s ease;display:block;min-height:260px;}
+/* STREAM GRID */
+.stream-section{padding:40px 24px 20px;max-width:1100px;margin:0 auto;width:100%;}
+.stream-heading{font-family:"Crimson Pro",serif;font-size:26px;font-weight:700;color:var(--navy);text-align:center;margin-bottom:8px;}
+.stream-sub{text-align:center;color:var(--text-lt);font-size:14.5px;margin-bottom:32px;}
+.stream-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-bottom:40px;}
+.stream-card{border-radius:16px;padding:26px 22px 52px;text-decoration:none;color:#fff;position:relative;overflow:hidden;transition:transform .22s ease,box-shadow .22s ease;display:block;min-height:240px;}
 .stream-card:hover{transform:translateY(-5px);box-shadow:0 18px 44px rgba(0,0,0,0.2);}
-.stream-card::before{content:'';position:absolute;top:-30px;right:-30px;width:130px;height:130px;border-radius:50%;background:rgba(255,255,255,0.07);}
+.stream-card::before{content:"";position:absolute;top:-30px;right:-30px;width:130px;height:130px;border-radius:50%;background:rgba(255,255,255,0.07);}
 .stream-card.maths{background:linear-gradient(135deg,#1E4D9B 0%,#2563EB 100%);}
 .stream-card.bio{background:linear-gradient(135deg,#166534 0%,#16a34a 100%);}
 .stream-card.comm{background:linear-gradient(135deg,#92400e 0%,#d97706 100%);}
 .stream-card.arts{background:linear-gradient(135deg,#5B21B6 0%,#7c3aed 100%);}
+.stream-card.faq{background:linear-gradient(135deg,#0F2044 0%,#1E4D9B 100%);}
+.stream-icon{font-size:36px;margin-bottom:10px;display:block;}
+.stream-card h2{font-family:"Crimson Pro",serif;font-size:22px;font-weight:700;margin-bottom:8px;word-break:break-word;}
+.stream-desc{font-size:12.5px;color:rgba(255,255,255,0.82);margin-bottom:14px;line-height:1.5;}
+.stream-exams{display:flex;flex-wrap:wrap;gap:5px;}
+.stream-exam-tag{background:rgba(255,255,255,0.18);border-radius:4px;padding:2px 7px;font-size:11px;font-weight:600;}
+.stream-arrow{position:absolute;bottom:18px;right:20px;font-size:20px;opacity:0.75;}
 
-.stream-coming{position:absolute;top:14px;right:14px;background:rgba(255,255,255,0.22);border-radius:4px;padding:3px 10px;font-size:11px;font-weight:600;white-space:nowrap;}
-.stream-icon{font-size:38px;margin-bottom:12px;display:block;}
-.stream-card h2{font-family:'Crimson Pro',serif;font-size:24px;font-weight:700;margin-bottom:8px;word-break:break-word;}
-.stream-desc{font-size:13px;color:rgba(255,255,255,0.82);margin-bottom:16px;line-height:1.5;}
-.stream-exams{display:flex;flex-wrap:wrap;gap:6px;}
-.stream-exam-tag{background:rgba(255,255,255,0.18);border-radius:4px;padding:2px 8px;font-size:11px;font-weight:600;}
-.stream-arrow{position:absolute;bottom:20px;right:22px;font-size:22px;opacity:0.75;}
-
-.stats-section{background:var(--white);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:36px 24px;}
-.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;max-width:1060px;margin:0 auto;text-align:center;}
-.stat-val{font-family:'Crimson Pro',serif;font-size:34px;font-weight:700;color:var(--blue);}
+/* STATS */
+.stats-section{background:var(--white);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:32px 24px;}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;max-width:1100px;margin:0 auto;text-align:center;}
+.stat-val{font-family:"Crimson Pro",serif;font-size:34px;font-weight:700;color:var(--blue);}
 .stat-label{font-size:13px;color:var(--text-lt);margin-top:2px;}
 
-.how-section{padding:44px 24px 20px;max-width:1060px;margin:0 auto;width:100%;}
-.how-heading{font-family:'Crimson Pro',serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:24px;text-align:center;}
+/* HOW */
+.how-section{padding:40px 24px 20px;max-width:1100px;margin:0 auto;width:100%;}
+.how-heading{font-family:"Crimson Pro",serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:24px;text-align:center;}
 .how-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;}
 .how-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:20px;text-align:center;}
 .how-num{width:32px;height:32px;background:var(--navy);color:#fff;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;margin-bottom:10px;}
@@ -75,119 +76,84 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);fon
 .how-card p{font-size:13px;color:var(--text-lt);}
 
 .footer{margin-top:auto;padding:24px;border-top:1px solid var(--border);text-align:center;font-size:13px;color:var(--gray);}
-
-@media(max-width:600px){.stream-grid{grid-template-columns:1fr;}.hero{padding:40px 20px 36px;}}
-
-/* TICKER */
-.ticker-wrap{background:#B91C1C;color:#fff;overflow:hidden;padding:0;height:38px;display:flex;align-items:center;}
-.ticker-label{background:#7F1D1D;padding:0 16px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;height:100%;display:flex;align-items:center;white-space:nowrap;flex-shrink:0;}
-.ticker-track{display:flex;animation:ticker 28s linear infinite;white-space:nowrap;}
-.ticker-track:hover{animation-play-state:paused;}
-.ticker-item{padding:0 40px;font-size:13px;font-weight:500;}
-.ticker-item a{color:#FCD34D;font-weight:700;text-decoration:none;}
-.ticker-item a:hover{text-decoration:underline;}
-.ticker-dot{color:#FCA5A5;padding:0 8px;}
-@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@media(max-width:600px){.stream-grid{grid-template-columns:1fr;}.hero{padding:36px 20px 32px;}}
 </style>
 </head>
 <body>
 
 <header class="topbar">
   <a class="topbar-logo" href="index.html">Career<span>Guide</span>.in</a>
-  <span class="topbar-tag">India · Class 11–12 · 2026-27</span>
+  <span class="topbar-tag">India · Class 11-12 · 2026-27</span>
 </header>
 
-
-<!-- ADMISSION TICKER -->
+<!-- LIVE TICKER — fixed below topbar -->
 <div class="ticker-wrap">
-  <div class="ticker-label">🔴 LIVE</div>
+  <div class="ticker-label">&#128308; LIVE</div>
   <div class="ticker-track">
-    <span class="ticker-item">📅 JEE Advanced 2026 — <strong>May 17, 2026</strong> <span class="ticker-dot">•</span> Result: <a href="https://jeeadv.ac.in" target="_blank">June 1, 2026</a></span>
-    <span class="ticker-item">📅 JoSAA 2026 Counselling Starts — <a href="josaa.html"><strong>June 2-3, 2026</strong></a> <span class="ticker-dot">•</span> Register at josaa.nic.in</span>
-    <span class="ticker-item">📅 NEET 2026 Results — <a href="neet.html"><strong>Expected June 2026</strong></a> <span class="ticker-dot">•</span> Check at neet.nta.nic.in</span>
-    <span class="ticker-item">📅 CUET UG 2026 — <a href="cuet.html"><strong>May 11-31, 2026</strong></a> <span class="ticker-dot">•</span> Results: June 2026</span>
-    <span class="ticker-item">📅 CLAT 2027 Registration — <a href="clat.html"><strong>Opens July 2026</strong></a> <span class="ticker-dot">•</span> Exam: December 2026</span>
-    <!-- duplicate for seamless loop -->
-    <span class="ticker-item">📅 JEE Advanced 2026 — <strong>May 17, 2026</strong> <span class="ticker-dot">•</span> Result: <a href="https://jeeadv.ac.in" target="_blank">June 1, 2026</a></span>
-    <span class="ticker-item">📅 JoSAA 2026 Counselling Starts — <a href="josaa.html"><strong>June 2-3, 2026</strong></a> <span class="ticker-dot">•</span> Register at josaa.nic.in</span>
-    <span class="ticker-item">📅 NEET 2026 Results — <a href="neet.html"><strong>Expected June 2026</strong></a> <span class="ticker-dot">•</span> Check at neet.nta.nic.in</span>
-    <span class="ticker-item">📅 CUET UG 2026 — <a href="cuet.html"><strong>May 11-31, 2026</strong></a> <span class="ticker-dot">•</span> Results: June 2026</span>
-    <span class="ticker-item">📅 CLAT 2027 Registration — <a href="clat.html"><strong>Opens July 2026</strong></a> <span class="ticker-dot">•</span> Exam: December 2026</span>
+    <span class="ticker-item">&#128197; JEE Advanced 2026 — <strong>May 17, 2026</strong> <span class="ticker-dot">&bull;</span> Result: <a href="https://jeeadv.ac.in" target="_blank">June 1, 2026</a></span>
+    <span class="ticker-item">&#128197; JoSAA 2026 Counselling — <a href="josaa.html"><strong>Starts June 2-3, 2026</strong></a> <span class="ticker-dot">&bull;</span> josaa.nic.in</span>
+    <span class="ticker-item">&#128197; NEET 2026 Results — <a href="neet.html"><strong>Expected June 2026</strong></a> <span class="ticker-dot">&bull;</span> neet.nta.nic.in</span>
+    <span class="ticker-item">&#128197; CUET UG 2026 — <a href="cuet.html"><strong>May 11-31, 2026</strong></a> <span class="ticker-dot">&bull;</span> Results: June 2026</span>
+    <span class="ticker-item">&#128197; CLAT 2027 Registration — <a href="clat.html"><strong>Opens July 2026</strong></a> <span class="ticker-dot">&bull;</span> Exam: December 2026</span>
+    <span class="ticker-item">&#128197; JEE Advanced 2026 — <strong>May 17, 2026</strong> <span class="ticker-dot">&bull;</span> Result: <a href="https://jeeadv.ac.in" target="_blank">June 1, 2026</a></span>
+    <span class="ticker-item">&#128197; JoSAA 2026 Counselling — <a href="josaa.html"><strong>Starts June 2-3, 2026</strong></a> <span class="ticker-dot">&bull;</span> josaa.nic.in</span>
+    <span class="ticker-item">&#128197; NEET 2026 Results — <a href="neet.html"><strong>Expected June 2026</strong></a> <span class="ticker-dot">&bull;</span> neet.nta.nic.in</span>
+    <span class="ticker-item">&#128197; CUET UG 2026 — <a href="cuet.html"><strong>May 11-31, 2026</strong></a> <span class="ticker-dot">&bull;</span> Results: June 2026</span>
+    <span class="ticker-item">&#128197; CLAT 2027 Registration — <a href="clat.html"><strong>Opens July 2026</strong></a> <span class="ticker-dot">&bull;</span> Exam: December 2026</span>
   </div>
 </div>
 
 <div class="page">
-
   <div class="hero">
-    <div class="hero-label">India · 2026-27 Admission Cycle</div>
-    <h1>Complete Career Guidance<br>for Class 11–12 Students</h1>
+    <div class="hero-label">India &middot; 2026-27 Admission Cycle</div>
+    <h1>Complete Career Guidance<br>for Class 11-12 Students</h1>
     <p>Choose your stream. Get exam details, college cutoffs, fees, and career paths — all in one place.</p>
-    <div class="hero-disclaimer">
-      ⚠ Cutoffs shown are from 2024-25 official data. Always verify at official websites before applying.
-    </div>
+    <div class="hero-disclaimer">&#9888; Cutoffs shown are from 2024-25 official data. Always verify at official websites before applying.</div>
   </div>
 
   <div class="stream-section">
     <h2 class="stream-heading">Select Your Stream</h2>
     <p class="stream-sub">Complete guide for each stream — exams, cutoffs, colleges, fees, placements and career paths.</p>
-
     <div class="stream-grid">
 
       <a class="stream-card maths" href="maths.html">
-        <span class="stream-icon">📐</span>
+        <span class="stream-icon">&#128208;</span>
         <h2>Mathematics</h2>
         <p class="stream-desc">PCM students — engineering, design, pure science, defence and more.</p>
-        <div class="stream-exams">
-          <span class="stream-exam-tag">JEE Main</span>
-          <span class="stream-exam-tag">JEE Advanced</span>
-          <span class="stream-exam-tag">BITSAT</span>
-          <span class="stream-exam-tag">UCEED</span>
-          <span class="stream-exam-tag">NDA</span>
-          <span class="stream-exam-tag">IISER</span>
-        </div>
-        <span class="stream-arrow">→</span>
+        <div class="stream-exams"><span class="stream-exam-tag">JEE Main</span><span class="stream-exam-tag">JEE Advanced</span><span class="stream-exam-tag">BITSAT</span><span class="stream-exam-tag">UCEED</span><span class="stream-exam-tag">NDA</span><span class="stream-exam-tag">IISER</span></div>
+        <span class="stream-arrow">&rarr;</span>
       </a>
 
       <a class="stream-card bio" href="bio.html">
-        <span class="stream-icon">🧬</span>
+        <span class="stream-icon">&#129516;</span>
         <h2>Biology</h2>
         <p class="stream-desc">PCB students — medicine, pharmacy, nursing, veterinary and allied health.</p>
-        <div class="stream-exams">
-          <span class="stream-exam-tag">NEET</span>
-          <span class="stream-exam-tag">AIIMS</span>
-          <span class="stream-exam-tag">JIPMER</span>
-          <span class="stream-exam-tag">B.Pharm</span>
-          <span class="stream-exam-tag">BVSc</span>
-        </div>
-        <span class="stream-arrow">→</span>
+        <div class="stream-exams"><span class="stream-exam-tag">NEET</span><span class="stream-exam-tag">AIIMS</span><span class="stream-exam-tag">JIPMER</span><span class="stream-exam-tag">B.Pharm</span><span class="stream-exam-tag">BVSc</span></div>
+        <span class="stream-arrow">&rarr;</span>
       </a>
 
       <a class="stream-card comm" href="commerce.html">
-        <span class="stream-icon">📊</span>
+        <span class="stream-icon">&#128202;</span>
         <h2>Commerce</h2>
         <p class="stream-desc">Commerce students — CA, management, law, banking and business careers.</p>
-        <div class="stream-exams">
-          <span class="stream-exam-tag">CUET</span>
-          <span class="stream-exam-tag">IPMAT</span>
-          <span class="stream-exam-tag">CA Foundation</span>
-          <span class="stream-exam-tag">CLAT</span>
-          <span class="stream-exam-tag">BBA</span>
-        </div>
-        <span class="stream-arrow">→</span>
+        <div class="stream-exams"><span class="stream-exam-tag">CUET</span><span class="stream-exam-tag">IPMAT</span><span class="stream-exam-tag">CA Foundation</span><span class="stream-exam-tag">CLAT</span><span class="stream-exam-tag">BBA</span></div>
+        <span class="stream-arrow">&rarr;</span>
       </a>
 
       <a class="stream-card arts" href="arts.html">
-        <span class="stream-icon">🎨</span>
+        <span class="stream-icon">&#127912;</span>
         <h2>Arts &amp; Humanities</h2>
         <p class="stream-desc">Arts students — law, design, journalism, civil services and creative fields.</p>
-        <div class="stream-exams">
-          <span class="stream-exam-tag">CLAT</span>
-          <span class="stream-exam-tag">NID DAT</span>
-          <span class="stream-exam-tag">NIFT</span>
-          <span class="stream-exam-tag">IIMC</span>
-          <span class="stream-exam-tag">UPSC</span>
-        </div>
-        <span class="stream-arrow">→</span>
+        <div class="stream-exams"><span class="stream-exam-tag">CLAT</span><span class="stream-exam-tag">NID DAT</span><span class="stream-exam-tag">NIFT</span><span class="stream-exam-tag">IIMC</span><span class="stream-exam-tag">UPSC</span></div>
+        <span class="stream-arrow">&rarr;</span>
+      </a>
+
+      <a class="stream-card faq" href="faq.html">
+        <span class="stream-icon">&#10067;</span>
+        <h2>Common Questions</h2>
+        <p class="stream-desc">Below 400 in NEET? JEE rank vs college? CA vs MBA? IAS route? All common questions answered.</p>
+        <div class="stream-exams"><span class="stream-exam-tag">All Streams</span><span class="stream-exam-tag">Q&amp;A</span><span class="stream-exam-tag">Career Advice</span></div>
+        <span class="stream-arrow">&rarr;</span>
       </a>
 
     </div>
@@ -214,10 +180,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);fon
     </div>
   </div>
 
-  <div class="footer">
-    Compiled for Indian students · 2026-27 Admission Cycle · Data from NTA, JoSAA, BITS Pilani, IIT official websites · <em>Approximate — verify at official sources before applying</em>
-  </div>
-
+  <div class="footer">Compiled for Indian students &middot; 2026-27 Admission Cycle &middot; Data from NTA, JoSAA, BITS Pilani, IIT official websites &middot; <em>Approximate — verify at official sources before applying</em></div>
 </div>
 </body>
 </html>
